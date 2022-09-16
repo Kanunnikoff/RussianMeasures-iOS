@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A47D84A28C351250023821E /* monomakh_unicode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A47D84428C351250023821E /* monomakh_unicode.ttf */; };
+		0A47D84F28C367A00023821E /* BulkSolidsMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47D84E28C367A00023821E /* BulkSolidsMeasuresView.swift */; };
+		0A47D85128C367BB0023821E /* BulkSolidsMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47D85028C367BB0023821E /* BulkSolidsMeasuresViewModel.swift */; };
+		0A47D85328C36A680023821E /* BulkSolidsMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47D85228C36A680023821E /* BulkSolidsMeasure.swift */; };
+		0A49D48B28BBF1D100398C15 /* VolumeMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49D48A28BBF1D100398C15 /* VolumeMeasuresView.swift */; };
+		0A49D48D28BBF24800398C15 /* VolumeMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49D48C28BBF24800398C15 /* VolumeMeasure.swift */; };
+		0A49D48F28BBF32C00398C15 /* VolumeMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49D48E28BBF32C00398C15 /* VolumeMeasuresViewModel.swift */; };
+		0A54340528B25CD5004C951C /* LengthMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54340428B25CD5004C951C /* LengthMeasuresView.swift */; };
+		0A54340828B2648C004C951C /* MeasuresItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54340728B2648C004C951C /* MeasuresItemDetails.swift */; };
+		0A54340A28B27EEE004C951C /* LengthMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54340928B27EEE004C951C /* LengthMeasure.swift */; };
+		0A54340C28B27F1D004C951C /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54340B28B27F1D004C951C /* Measure.swift */; };
+		0A54341128B280FC004C951C /* LengthMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54341028B280FC004C951C /* LengthMeasuresViewModel.swift */; };
+		0A5DF55528C49CFE00108026 /* LiquidBodiesMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5DF55428C49CFE00108026 /* LiquidBodiesMeasuresViewModel.swift */; };
+		0A5DF55728C49D0B00108026 /* LiquidBodiesMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5DF55628C49D0B00108026 /* LiquidBodiesMeasuresView.swift */; };
+		0A5DF55928C49D3300108026 /* LiquidBodiesMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5DF55828C49D3300108026 /* LiquidBodiesMeasure.swift */; };
+		0A6E9B7528C52B4D001EADD0 /* WeightMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9B7428C52B4D001EADD0 /* WeightMeasuresViewModel.swift */; };
+		0A6E9B7728C52B60001EADD0 /* WeightMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9B7628C52B60001EADD0 /* WeightMeasuresView.swift */; };
+		0A6E9B7928C52B7D001EADD0 /* WeightMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9B7828C52B7D001EADD0 /* WeightMeasure.swift */; };
+		0A747CB7289E6851005C5EEA /* RussianMeasuresSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A747CB6289E6851005C5EEA /* RussianMeasuresSystemApp.swift */; };
+		0A747CBB289E6852005C5EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A747CBA289E6852005C5EEA /* Assets.xcassets */; };
+		0A747CBF289E6852005C5EEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A747CBE289E6852005C5EEA /* Preview Assets.xcassets */; };
+		0A958386289EB76600640452 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837A289EB76600640452 /* SettingsView.swift */; };
+		0A958387289EB76600640452 /* DetailColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837C289EB76600640452 /* DetailColumn.swift */; };
+		0A958388289EB76600640452 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837D289EB76600640452 /* Sidebar.swift */; };
+		0A958389289EB76600640452 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837E289EB76600640452 /* ContentView.swift */; };
+		0A95838A289EB76600640452 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958380289EB76600640452 /* AboutView.swift */; };
+		0A95838B289EB76600640452 /* WidthThresholdReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958381289EB76600640452 /* WidthThresholdReader.swift */; };
+		0A95838E289EB76600640452 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958385289EB76600640452 /* MainView.swift */; };
+		0A958393289EB77C00640452 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958390289EB77C00640452 /* Config.swift */; };
+		0A958394289EB77C00640452 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958391289EB77C00640452 /* Util.swift */; };
+		0AAF7DB528CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB428CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift */; };
+		0AAF7DB728CC7F36005519A1 /* PharmaceuticalMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB628CC7F36005519A1 /* PharmaceuticalMeasuresView.swift */; };
+		0AAF7DB928CC7F4D005519A1 /* PharmaceuticalMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB828CC7F4D005519A1 /* PharmaceuticalMeasure.swift */; };
+		0AAF7DBC28CC8FCC005519A1 /* PieceItemsMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DBB28CC8FCC005519A1 /* PieceItemsMeasure.swift */; };
+		0AAF7DBE28CC8FDC005519A1 /* PieceItemsMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DBD28CC8FDC005519A1 /* PieceItemsMeasuresViewModel.swift */; };
+		0AAF7DC028CC8FE7005519A1 /* PieceItemsMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DBF28CC8FE7005519A1 /* PieceItemsMeasuresView.swift */; };
+		0AC44E9528BB637600DA4E14 /* VerticallyLabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9428BB637600DA4E14 /* VerticallyLabeledTextField.swift */; };
+		0AC44E9728BB705700DA4E14 /* BorderLabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9628BB705700DA4E14 /* BorderLabeledTextField.swift */; };
+		0AC44E9A28BBC48800DA4E14 /* SquareMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9928BBC48800DA4E14 /* SquareMeasure.swift */; };
+		0AC44E9D28BBC5C100DA4E14 /* SquareMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9C28BBC5C100DA4E14 /* SquareMeasuresViewModel.swift */; };
+		0AC44E9F28BBC63D00DA4E14 /* SquareMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9E28BBC63D00DA4E14 /* SquareMeasuresView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A27777128BD50E100C73B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0A47D84428C351250023821E /* monomakh_unicode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = monomakh_unicode.ttf; sourceTree = "<group>"; };
+		0A47D84E28C367A00023821E /* BulkSolidsMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkSolidsMeasuresView.swift; sourceTree = "<group>"; };
+		0A47D85028C367BB0023821E /* BulkSolidsMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkSolidsMeasuresViewModel.swift; sourceTree = "<group>"; };
+		0A47D85228C36A680023821E /* BulkSolidsMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkSolidsMeasure.swift; sourceTree = "<group>"; };
+		0A49D48A28BBF1D100398C15 /* VolumeMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeMeasuresView.swift; sourceTree = "<group>"; };
+		0A49D48C28BBF24800398C15 /* VolumeMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeMeasure.swift; sourceTree = "<group>"; };
+		0A49D48E28BBF32C00398C15 /* VolumeMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeMeasuresViewModel.swift; sourceTree = "<group>"; };
+		0A54340428B25CD5004C951C /* LengthMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthMeasuresView.swift; sourceTree = "<group>"; };
+		0A54340728B2648C004C951C /* MeasuresItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuresItemDetails.swift; sourceTree = "<group>"; };
+		0A54340928B27EEE004C951C /* LengthMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthMeasure.swift; sourceTree = "<group>"; };
+		0A54340B28B27F1D004C951C /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		0A54341028B280FC004C951C /* LengthMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthMeasuresViewModel.swift; sourceTree = "<group>"; };
+		0A5DF55428C49CFE00108026 /* LiquidBodiesMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidBodiesMeasuresViewModel.swift; sourceTree = "<group>"; };
+		0A5DF55628C49D0B00108026 /* LiquidBodiesMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidBodiesMeasuresView.swift; sourceTree = "<group>"; };
+		0A5DF55828C49D3300108026 /* LiquidBodiesMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidBodiesMeasure.swift; sourceTree = "<group>"; };
+		0A6E9B7428C52B4D001EADD0 /* WeightMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMeasuresViewModel.swift; sourceTree = "<group>"; };
+		0A6E9B7628C52B60001EADD0 /* WeightMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMeasuresView.swift; sourceTree = "<group>"; };
+		0A6E9B7828C52B7D001EADD0 /* WeightMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMeasure.swift; sourceTree = "<group>"; };
+		0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussianMeasuresSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A747CB6289E6851005C5EEA /* RussianMeasuresSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussianMeasuresSystemApp.swift; sourceTree = "<group>"; };
+		0A747CBA289E6852005C5EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A747CBC289E6852005C5EEA /* RussianMeasuresSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RussianMeasuresSystem.entitlements; sourceTree = "<group>"; };
+		0A747CBE289E6852005C5EEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A95837A289EB76600640452 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0A95837C289EB76600640452 /* DetailColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailColumn.swift; sourceTree = "<group>"; };
+		0A95837D289EB76600640452 /* Sidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		0A95837E289EB76600640452 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A958380289EB76600640452 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		0A958381289EB76600640452 /* WidthThresholdReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidthThresholdReader.swift; sourceTree = "<group>"; };
+		0A958385289EB76600640452 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0A958390289EB77C00640452 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		0A958391289EB77C00640452 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		0AAF7DB428CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaceuticalMeasuresViewModel.swift; sourceTree = "<group>"; };
+		0AAF7DB628CC7F36005519A1 /* PharmaceuticalMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaceuticalMeasuresView.swift; sourceTree = "<group>"; };
+		0AAF7DB828CC7F4D005519A1 /* PharmaceuticalMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaceuticalMeasure.swift; sourceTree = "<group>"; };
+		0AAF7DBB28CC8FCC005519A1 /* PieceItemsMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceItemsMeasure.swift; sourceTree = "<group>"; };
+		0AAF7DBD28CC8FDC005519A1 /* PieceItemsMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceItemsMeasuresViewModel.swift; sourceTree = "<group>"; };
+		0AAF7DBF28CC8FE7005519A1 /* PieceItemsMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceItemsMeasuresView.swift; sourceTree = "<group>"; };
+		0AC44E9428BB637600DA4E14 /* VerticallyLabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyLabeledTextField.swift; sourceTree = "<group>"; };
+		0AC44E9628BB705700DA4E14 /* BorderLabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderLabeledTextField.swift; sourceTree = "<group>"; };
+		0AC44E9928BBC48800DA4E14 /* SquareMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareMeasure.swift; sourceTree = "<group>"; };
+		0AC44E9C28BBC5C100DA4E14 /* SquareMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareMeasuresViewModel.swift; sourceTree = "<group>"; };
+		0AC44E9E28BBC63D00DA4E14 /* SquareMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareMeasuresView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A747CB0289E6851005C5EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A27776E28BD50A900C73B55 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0A47D84428C351250023821E /* monomakh_unicode.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0A47D84D28C3677C0023821E /* BulkSolids */ = {
+			isa = PBXGroup;
+			children = (
+				0A47D84E28C367A00023821E /* BulkSolidsMeasuresView.swift */,
+				0A47D85028C367BB0023821E /* BulkSolidsMeasuresViewModel.swift */,
+			);
+			path = BulkSolids;
+			sourceTree = "<group>";
+		};
+		0A49D48928BBF19C00398C15 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				0A5DF55328C49C9500108026 /* LiquidBodies */,
+				0A47D84D28C3677C0023821E /* BulkSolids */,
+				0A49D48A28BBF1D100398C15 /* VolumeMeasuresView.swift */,
+				0A49D48E28BBF32C00398C15 /* VolumeMeasuresViewModel.swift */,
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
+		0A54340328B25CB1004C951C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF7DBA28CC8FB1005519A1 /* PieceItems */,
+				0A6E9B7328C52B2A001EADD0 /* Weight */,
+				0A49D48928BBF19C00398C15 /* Volume */,
+				0AC44E9B28BBC5B000DA4E14 /* Square */,
+				0A54340F28B280DF004C951C /* Length */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		0A54340628B2647F004C951C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				0A54340728B2648C004C951C /* MeasuresItemDetails.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		0A54340F28B280DF004C951C /* Length */ = {
+			isa = PBXGroup;
+			children = (
+				0A54341028B280FC004C951C /* LengthMeasuresViewModel.swift */,
+				0A54340428B25CD5004C951C /* LengthMeasuresView.swift */,
+			);
+			path = Length;
+			sourceTree = "<group>";
+		};
+		0A54341228B28470004C951C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A54340928B27EEE004C951C /* LengthMeasure.swift */,
+				0AC44E9928BBC48800DA4E14 /* SquareMeasure.swift */,
+				0A54340B28B27F1D004C951C /* Measure.swift */,
+				0A49D48C28BBF24800398C15 /* VolumeMeasure.swift */,
+				0A47D85228C36A680023821E /* BulkSolidsMeasure.swift */,
+				0A5DF55828C49D3300108026 /* LiquidBodiesMeasure.swift */,
+				0A6E9B7828C52B7D001EADD0 /* WeightMeasure.swift */,
+				0AAF7DB828CC7F4D005519A1 /* PharmaceuticalMeasure.swift */,
+				0AAF7DBB28CC8FCC005519A1 /* PieceItemsMeasure.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A5DF55328C49C9500108026 /* LiquidBodies */ = {
+			isa = PBXGroup;
+			children = (
+				0A5DF55428C49CFE00108026 /* LiquidBodiesMeasuresViewModel.swift */,
+				0A5DF55628C49D0B00108026 /* LiquidBodiesMeasuresView.swift */,
+			);
+			path = LiquidBodies;
+			sourceTree = "<group>";
+		};
+		0A6E9B7328C52B2A001EADD0 /* Weight */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF7DB328CC7EF2005519A1 /* Pharmaceutical */,
+				0A6E9B7428C52B4D001EADD0 /* WeightMeasuresViewModel.swift */,
+				0A6E9B7628C52B60001EADD0 /* WeightMeasuresView.swift */,
+			);
+			path = Weight;
+			sourceTree = "<group>";
+		};
+		0A747CAA289E6851005C5EEA = {
+			isa = PBXGroup;
+			children = (
+				0A747CB5289E6851005C5EEA /* RussianMeasuresSystem */,
+				0A747CB4289E6851005C5EEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A747CB4289E6851005C5EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A747CB5289E6851005C5EEA /* RussianMeasuresSystem */ = {
+			isa = PBXGroup;
+			children = (
+				0A27777128BD50E100C73B55 /* Info.plist */,
+				0A27776E28BD50A900C73B55 /* Fonts */,
+				0A95838F289EB77C00640452 /* Domain */,
+				0A958378289EB76600640452 /* Presentation */,
+				0A747CB6289E6851005C5EEA /* RussianMeasuresSystemApp.swift */,
+				0A747CBA289E6852005C5EEA /* Assets.xcassets */,
+				0A747CBC289E6852005C5EEA /* RussianMeasuresSystem.entitlements */,
+				0A747CBD289E6852005C5EEA /* Preview Content */,
+			);
+			path = RussianMeasuresSystem;
+			sourceTree = "<group>";
+		};
+		0A747CBD289E6852005C5EEA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A747CBE289E6852005C5EEA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A958378289EB76600640452 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0AC44E9028BB5BBC00DA4E14 /* Custom */,
+				0A958379289EB76600640452 /* Settings */,
+				0A95837B289EB76600640452 /* Navigation */,
+				0A95837F289EB76600640452 /* About */,
+				0A958381289EB76600640452 /* WidthThresholdReader.swift */,
+				0A958382289EB76600640452 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0A958379289EB76600640452 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0A95837A289EB76600640452 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0A95837B289EB76600640452 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0A95837C289EB76600640452 /* DetailColumn.swift */,
+				0A95837D289EB76600640452 /* Sidebar.swift */,
+				0A95837E289EB76600640452 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0A95837F289EB76600640452 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0A958380289EB76600640452 /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		0A958382289EB76600640452 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0A54340628B2647F004C951C /* Details */,
+				0A54340328B25CB1004C951C /* Items */,
+				0A958385289EB76600640452 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0A95838F289EB77C00640452 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0A54341228B28470004C951C /* Model */,
+				0A958390289EB77C00640452 /* Config.swift */,
+				0A958391289EB77C00640452 /* Util.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0AAF7DB328CC7EF2005519A1 /* Pharmaceutical */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF7DB428CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift */,
+				0AAF7DB628CC7F36005519A1 /* PharmaceuticalMeasuresView.swift */,
+			);
+			path = Pharmaceutical;
+			sourceTree = "<group>";
+		};
+		0AAF7DBA28CC8FB1005519A1 /* PieceItems */ = {
+			isa = PBXGroup;
+			children = (
+				0AAF7DBD28CC8FDC005519A1 /* PieceItemsMeasuresViewModel.swift */,
+				0AAF7DBF28CC8FE7005519A1 /* PieceItemsMeasuresView.swift */,
+			);
+			path = PieceItems;
+			sourceTree = "<group>";
+		};
+		0AC44E9028BB5BBC00DA4E14 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0AC44E9428BB637600DA4E14 /* VerticallyLabeledTextField.swift */,
+				0AC44E9628BB705700DA4E14 /* BorderLabeledTextField.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		0AC44E9B28BBC5B000DA4E14 /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				0AC44E9C28BBC5C100DA4E14 /* SquareMeasuresViewModel.swift */,
+				0AC44E9E28BBC63D00DA4E14 /* SquareMeasuresView.swift */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A747CB2289E6851005C5EEA /* RussianMeasuresSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A747CC2289E6852005C5EEA /* Build configuration list for PBXNativeTarget "RussianMeasuresSystem" */;
+			buildPhases = (
+				0A747CAF289E6851005C5EEA /* Sources */,
+				0A747CB0289E6851005C5EEA /* Frameworks */,
+				0A747CB1289E6851005C5EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RussianMeasuresSystem;
+			productName = RussianMeasuresSystem;
+			productReference = 0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A747CAB289E6851005C5EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					0A747CB2289E6851005C5EEA = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 0A747CAE289E6851005C5EEA /* Build configuration list for PBXProject "RussianMeasuresSystem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A747CAA289E6851005C5EEA;
+			productRefGroup = 0A747CB4289E6851005C5EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A747CB2289E6851005C5EEA /* RussianMeasuresSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A747CB1289E6851005C5EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A47D84A28C351250023821E /* monomakh_unicode.ttf in Resources */,
+				0A747CBF289E6852005C5EEA /* Preview Assets.xcassets in Resources */,
+				0A747CBB289E6852005C5EEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A747CAF289E6851005C5EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAF7DB728CC7F36005519A1 /* PharmaceuticalMeasuresView.swift in Sources */,
+				0A54340528B25CD5004C951C /* LengthMeasuresView.swift in Sources */,
+				0A958387289EB76600640452 /* DetailColumn.swift in Sources */,
+				0AAF7DBE28CC8FDC005519A1 /* PieceItemsMeasuresViewModel.swift in Sources */,
+				0A49D48D28BBF24800398C15 /* VolumeMeasure.swift in Sources */,
+				0A958389289EB76600640452 /* ContentView.swift in Sources */,
+				0A747CB7289E6851005C5EEA /* RussianMeasuresSystemApp.swift in Sources */,
+				0A47D85128C367BB0023821E /* BulkSolidsMeasuresViewModel.swift in Sources */,
+				0A47D84F28C367A00023821E /* BulkSolidsMeasuresView.swift in Sources */,
+				0A6E9B7728C52B60001EADD0 /* WeightMeasuresView.swift in Sources */,
+				0A5DF55928C49D3300108026 /* LiquidBodiesMeasure.swift in Sources */,
+				0A95838E289EB76600640452 /* MainView.swift in Sources */,
+				0A958393289EB77C00640452 /* Config.swift in Sources */,
+				0AC44E9728BB705700DA4E14 /* BorderLabeledTextField.swift in Sources */,
+				0AAF7DB928CC7F4D005519A1 /* PharmaceuticalMeasure.swift in Sources */,
+				0AAF7DBC28CC8FCC005519A1 /* PieceItemsMeasure.swift in Sources */,
+				0AC44E9D28BBC5C100DA4E14 /* SquareMeasuresViewModel.swift in Sources */,
+				0A49D48F28BBF32C00398C15 /* VolumeMeasuresViewModel.swift in Sources */,
+				0A54340C28B27F1D004C951C /* Measure.swift in Sources */,
+				0A49D48B28BBF1D100398C15 /* VolumeMeasuresView.swift in Sources */,
+				0A95838B289EB76600640452 /* WidthThresholdReader.swift in Sources */,
+				0A6E9B7528C52B4D001EADD0 /* WeightMeasuresViewModel.swift in Sources */,
+				0AAF7DC028CC8FE7005519A1 /* PieceItemsMeasuresView.swift in Sources */,
+				0A5DF55528C49CFE00108026 /* LiquidBodiesMeasuresViewModel.swift in Sources */,
+				0A6E9B7928C52B7D001EADD0 /* WeightMeasure.swift in Sources */,
+				0A5DF55728C49D0B00108026 /* LiquidBodiesMeasuresView.swift in Sources */,
+				0A47D85328C36A680023821E /* BulkSolidsMeasure.swift in Sources */,
+				0A958394289EB77C00640452 /* Util.swift in Sources */,
+				0A958388289EB76600640452 /* Sidebar.swift in Sources */,
+				0AC44E9528BB637600DA4E14 /* VerticallyLabeledTextField.swift in Sources */,
+				0AC44E9A28BBC48800DA4E14 /* SquareMeasure.swift in Sources */,
+				0A54341128B280FC004C951C /* LengthMeasuresViewModel.swift in Sources */,
+				0AAF7DB528CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift in Sources */,
+				0A95838A289EB76600640452 /* AboutView.swift in Sources */,
+				0A54340A28B27EEE004C951C /* LengthMeasure.swift in Sources */,
+				0A958386289EB76600640452 /* SettingsView.swift in Sources */,
+				0AC44E9F28BBC63D00DA4E14 /* SquareMeasuresView.swift in Sources */,
+				0A54340828B2648C004C951C /* MeasuresItemDetails.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A747CC0289E6852005C5EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A747CC1289E6852005C5EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0A747CC3289E6852005C5EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RussianMeasuresSystem/RussianMeasuresSystem.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystem/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RussianMeasuresSystem/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Русские меры";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A747CC4289E6852005C5EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RussianMeasuresSystem/RussianMeasuresSystem.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystem/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RussianMeasuresSystem/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Русские меры";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A747CAE289E6851005C5EEA /* Build configuration list for PBXProject "RussianMeasuresSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A747CC0289E6852005C5EEA /* Debug */,
+				0A747CC1289E6852005C5EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A747CC2289E6852005C5EEA /* Build configuration list for PBXNativeTarget "RussianMeasuresSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A747CC3289E6852005C5EEA /* Debug */,
+				0A747CC4289E6852005C5EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A747CAB289E6851005C5EEA /* Project object */;
+}
