@@ -11,12 +11,13 @@ struct VerticallyLabeledTextField: View {
     
     var label: LocalizedStringKey
     var labelFont: Font = .headline
-    var prompt: LocalizedStringKey
-    var promptFont: Font = .body
+    var title: LocalizedStringKey
+    var font: Font = .body
     @Binding var text: String
     var onTextChanged: (String) -> Void
     
     @FocusState private var isFocused
+    @State private var isEditing: Bool = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -25,26 +26,31 @@ struct VerticallyLabeledTextField: View {
             
             ZStack(alignment: .trailing) {
                 TextField(
+                    title,
                     text: $text,
-                    prompt: Text(prompt)
-                        .font(promptFont),
-                    label: {}
-                )
-                    .focused($isFocused)
-                    .autocorrectionDisabled()
-#if os(iOS)
-                    .autocapitalization(.none)
-                    .keyboardType(.decimalPad)
-                    .padding(10)
-                    .overlay(overlay)
-#elseif os(macOS)
-                    .textFieldStyle(.roundedBorder)
-#endif
-                    .onChange(of: text) { value in
-                        if isFocused {
-                            onTextChanged(value)
-                        }
+                    onEditingChanged: { editing in
+                        isEditing = editing
                     }
+                )
+                .font(font)
+                .focused($isFocused)
+                .autocorrectionDisabled()
+#if os(iOS) || os(tvOS)
+                .autocapitalization(.none)
+                .keyboardType(.decimalPad)
+#endif
+#if os(iOS)
+                .padding(10)
+                .overlay(overlay)
+#endif
+#if os(macOS)
+                .textFieldStyle(.roundedBorder)
+#endif
+                .onChange(of: text) { value in
+                    if isFocused || isEditing {
+                        onTextChanged(value)
+                    }
+                }
                 
 #if os(iOS)
                 if isFocused && !text.isEmpty {
@@ -82,7 +88,7 @@ struct VerticallyLabeledContent_Previews: PreviewProvider {
     static var previews: some View {
         VerticallyLabeledTextField(
             label: "Линия",
-            prompt: "Введите значение в линиях",
+            title: "Введите значение в линиях",
             text: $text,
             onTextChanged: { value in }
         )

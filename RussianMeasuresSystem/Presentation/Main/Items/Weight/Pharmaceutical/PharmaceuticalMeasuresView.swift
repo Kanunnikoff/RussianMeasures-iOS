@@ -72,9 +72,9 @@ struct PharmaceuticalMeasuresView: View {
     var gran: some View {
         VerticallyLabeledTextField(
             label: "Гран",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в гранах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в гранах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.granText,
             onTextChanged: { value in
                 subject.send(PharmaceuticalMeasure(value: value, kind: .gran))
@@ -85,9 +85,9 @@ struct PharmaceuticalMeasuresView: View {
     var scruple: some View {
         VerticallyLabeledTextField(
             label: "Скрупул",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в скрупулах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в скрупулах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.scrupleText,
             onTextChanged: { value in
                 subject.send(PharmaceuticalMeasure(value: value, kind: .scruple))
@@ -98,9 +98,9 @@ struct PharmaceuticalMeasuresView: View {
     var drachma: some View {
         VerticallyLabeledTextField(
             label: "Драхма",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в драхмах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в драхмах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.drachmaText,
             onTextChanged: { value in
                 subject.send(PharmaceuticalMeasure(value: value, kind: .drachma))
@@ -111,9 +111,9 @@ struct PharmaceuticalMeasuresView: View {
     var ounce: some View {
         VerticallyLabeledTextField(
             label: "Унция",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в унциях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в унциях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.ounceText,
             onTextChanged: { value in
                 subject.send(PharmaceuticalMeasure(value: value, kind: .ounce))
@@ -124,9 +124,9 @@ struct PharmaceuticalMeasuresView: View {
     var pound: some View {
         VerticallyLabeledTextField(
             label: "Фунт",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в фунтах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в фунтах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.poundText,
             onTextChanged: { value in
                 subject.send(PharmaceuticalMeasure(value: value, kind: .pound))
@@ -137,9 +137,9 @@ struct PharmaceuticalMeasuresView: View {
     var milligram: some View {
         VerticallyLabeledTextField(
             label: "Миллиграмм",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в миллиграммах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в миллиграммах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.milligramText,
             onTextChanged: { value in
                 subject.send(PharmaceuticalMeasure(value: value, kind: .milligram))
@@ -150,9 +150,9 @@ struct PharmaceuticalMeasuresView: View {
     var gram: some View {
         VerticallyLabeledTextField(
             label: "Грамм",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в граммах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в граммах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.gramText,
             onTextChanged: { value in
                 subject.send(PharmaceuticalMeasure(value: value, kind: .gram))

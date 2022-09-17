@@ -34,7 +34,9 @@ struct Util {
     @AppStorage("Util.lastVersionPromtedForReview")
     private static var lastVersionPromtedForReview: String = ""
     
+#if !os(tvOS)
     @Environment(\.requestReview) static var requestReview
+#endif
     
     private init() {
     }
@@ -69,6 +71,7 @@ struct Util {
         return build
     }
     
+#if !os(tvOS)
     @MainActor static func requestReviewIfNeeded() {
         launchesCount += 1
         
@@ -81,4 +84,5 @@ struct Util {
             lastVersionPromtedForReview = currentVersion
         }
     }
+#endif
 }

@@ -19,15 +19,15 @@ struct SettingsView: View {
                     .font(isSystemFontAndSize ? .body : Config.customBodyFont)
             } header: {
                 Text("Основные")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionTitleFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
                 Text("Возможность отображения текста в старинном начертании.")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionFooterFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
         }
 #if os(iOS)
         .listStyle(.insetGrouped)
-#else
+#elseif !os(tvOS)
         .listStyle(.inset)
 #endif
         .navigationTitle("Настройки")

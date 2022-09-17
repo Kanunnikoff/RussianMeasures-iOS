@@ -9,25 +9,25 @@ import SwiftUI
 
 @main
 struct RussianMeasuresSystemApp: App {
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-                #if os(macOS)
-                .defaultSize(width: 1000, height: 650)
-                #endif
-
-        #if os(macOS)
+#if os(macOS)
+        .defaultSize(width: 1000, height: 650)
+#endif
+        
+#if os(macOS)
         MenuBarExtra {
             VStack {
                 Text("Русские меры")
             }
-                    .padding()
+            .padding()
         } label: {
             Text("Ⰳ")
         }
-                .menuBarExtraStyle(.window)
-        #endif
+        .menuBarExtraStyle(.window)
+#endif
     }
 }

@@ -65,9 +65,9 @@ struct PieceItemsMeasuresView: View {
     var pair: some View {
         VerticallyLabeledTextField(
             label: "Пара",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в парах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в парах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.pairText,
             onTextChanged: { value in
                 subject.send(PieceItemsMeasure(value: value, kind: .pair))
@@ -78,9 +78,9 @@ struct PieceItemsMeasuresView: View {
     var dozen: some View {
         VerticallyLabeledTextField(
             label: "Дюжина",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в дюжинах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в дюжинах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.dozenText,
             onTextChanged: { value in
                 subject.send(PieceItemsMeasure(value: value, kind: .dozen))
@@ -91,9 +91,9 @@ struct PieceItemsMeasuresView: View {
     var gross: some View {
         VerticallyLabeledTextField(
             label: "Гросс",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в гроссах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в гроссах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.grossText,
             onTextChanged: { value in
                 subject.send(PieceItemsMeasure(value: value, kind: .gross))
@@ -104,9 +104,9 @@ struct PieceItemsMeasuresView: View {
     var mass: some View {
         VerticallyLabeledTextField(
             label: "Масса",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в массах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в массах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.massText,
             onTextChanged: { value in
                 subject.send(PieceItemsMeasure(value: value, kind: .mass))
@@ -117,9 +117,9 @@ struct PieceItemsMeasuresView: View {
     var piece: some View {
         VerticallyLabeledTextField(
             label: "Штука",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в штуках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в штуках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.pieceText,
             onTextChanged: { value in
                 subject.send(PieceItemsMeasure(value: value, kind: .piece))

@@ -82,9 +82,9 @@ struct VolumeMeasuresView: View {
     var line: some View {
         VerticallyLabeledTextField(
             label: "Куб. линия",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. линиях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. линиях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.lineText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .line))
@@ -95,9 +95,9 @@ struct VolumeMeasuresView: View {
     var inch: some View {
         VerticallyLabeledTextField(
             label: "Куб. дюйм",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. дюймах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. дюймах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.inchText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .inch))
@@ -108,9 +108,9 @@ struct VolumeMeasuresView: View {
     var vershok: some View {
         VerticallyLabeledTextField(
             label: "Куб. вершок",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. вершках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. вершках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.vershokText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .vershok))
@@ -121,9 +121,9 @@ struct VolumeMeasuresView: View {
     var foot: some View {
         VerticallyLabeledTextField(
             label: "Куб. фут",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. футах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. футах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.footText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .foot))
@@ -134,9 +134,9 @@ struct VolumeMeasuresView: View {
     var arshin: some View {
         VerticallyLabeledTextField(
             label: "Куб. аршин",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. аршинах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. аршинах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.arshinText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .arshin))
@@ -147,9 +147,9 @@ struct VolumeMeasuresView: View {
     var fathom: some View {
         VerticallyLabeledTextField(
             label: "Куб. сажень",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. саженях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. саженях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.fathomText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .fathom))
@@ -160,9 +160,9 @@ struct VolumeMeasuresView: View {
     var millimeter: some View {
         VerticallyLabeledTextField(
             label: "Куб. миллиметр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. миллиметрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. миллиметрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.millimeterText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .millimeter))
@@ -173,9 +173,9 @@ struct VolumeMeasuresView: View {
     var centimeter: some View {
         VerticallyLabeledTextField(
             label: "Куб. сантиметр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. сантиметрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. сантиметрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.millimeterText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .centimeter))
@@ -186,9 +186,9 @@ struct VolumeMeasuresView: View {
     var meter: some View {
         VerticallyLabeledTextField(
             label: "Куб. метр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в куб. метрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в куб. метрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.meterText,
             onTextChanged: { value in
                 subject.send(VolumeMeasure(value: value, kind: .meter))

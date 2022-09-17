@@ -103,9 +103,9 @@ struct LiquidBodiesMeasuresView: View {
     var scale: some View {
         VerticallyLabeledTextField(
             label: "Шкалик",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в шкаликах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в шкаликах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.scaleText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .scale))
@@ -116,9 +116,9 @@ struct LiquidBodiesMeasuresView: View {
     var cup: some View {
         VerticallyLabeledTextField(
             label: "Чарка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в чарках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в чарках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.cupText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .cup))
@@ -129,9 +129,9 @@ struct LiquidBodiesMeasuresView: View {
     var chetushka: some View {
         VerticallyLabeledTextField(
             label: "Четушка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в четушках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в четушках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.chetushkaText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .chetushka))
@@ -142,9 +142,9 @@ struct LiquidBodiesMeasuresView: View {
     var glass: some View {
         VerticallyLabeledTextField(
             label: "Стакан",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в стаканах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в стаканах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.glassText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .glass))
@@ -155,9 +155,9 @@ struct LiquidBodiesMeasuresView: View {
     var pigtail: some View {
         VerticallyLabeledTextField(
             label: "Косушка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в косушках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в косушках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.pigtailText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .pigtail))
@@ -168,9 +168,9 @@ struct LiquidBodiesMeasuresView: View {
     var vodkaBottle: some View {
         VerticallyLabeledTextField(
             label: "Водочная (пивная) бутылка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в водочных бутылках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в водочных бутылках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.vodkaBottleText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .vodkaBottle))
@@ -181,9 +181,9 @@ struct LiquidBodiesMeasuresView: View {
     var wineBottle: some View {
         VerticallyLabeledTextField(
             label: "Винная бутылка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в винных бутылках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в винных бутылках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.wineBottleText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .wineBottle))
@@ -194,9 +194,9 @@ struct LiquidBodiesMeasuresView: View {
     var damask: some View {
         VerticallyLabeledTextField(
             label: "Штоф",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в штофах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в штофах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.damaskText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .damask))
@@ -207,9 +207,9 @@ struct LiquidBodiesMeasuresView: View {
     var octagonalDamask: some View {
         VerticallyLabeledTextField(
             label: "Штоф осьмериковый",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в штофах осьмериковых",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в штофах осьмериковых",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.octagonalDamaskText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .octagonalDamask))
@@ -220,9 +220,9 @@ struct LiquidBodiesMeasuresView: View {
     var garnet: some View {
         VerticallyLabeledTextField(
             label: "Гарнец",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в гарнецах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в гарнецах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.garnetText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .garnet))
@@ -233,9 +233,9 @@ struct LiquidBodiesMeasuresView: View {
     var quarter: some View {
         VerticallyLabeledTextField(
             label: "Четверть (ведра)",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в четвертях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в четвертях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.quarterText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .quarter))
@@ -246,9 +246,9 @@ struct LiquidBodiesMeasuresView: View {
     var bucket: some View {
         VerticallyLabeledTextField(
             label: "Ведро",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в вёдрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в вёдрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.bucketText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .bucket))
@@ -259,9 +259,9 @@ struct LiquidBodiesMeasuresView: View {
     var korchaga: some View {
         VerticallyLabeledTextField(
             label: "Корчага",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в корчагах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в корчагах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.korchagaText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .korchaga))
@@ -272,9 +272,9 @@ struct LiquidBodiesMeasuresView: View {
     var barrel: some View {
         VerticallyLabeledTextField(
             label: "Бочка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в бочках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в бочках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.barrelText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .barrel))
@@ -285,9 +285,9 @@ struct LiquidBodiesMeasuresView: View {
     var liters: some View {
         VerticallyLabeledTextField(
             label: "Литр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в литрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в литрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.literText,
             onTextChanged: { value in
                 subject.send(LiquidBodiesMeasure(value: value, kind: .liter))

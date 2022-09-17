@@ -57,10 +57,10 @@ struct MainView: View {
                 }
             } header: {
                 Text("Меры объёма")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionTitleFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
                 Text("Куб. сажень, осьмина, штоф,..")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionFooterFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
             Section {
@@ -75,10 +75,10 @@ struct MainView: View {
                 }
             } header: {
                 Text("Меры веса")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionTitleFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
                 Text("Пуд, золотник, унция,..")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionFooterFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
             NavigationLink(value: MeasuresItem.pieceItems) {
@@ -92,7 +92,7 @@ struct MainView: View {
 #if os(iOS)
 //        .background(Color(uiColor: .systemGroupedBackground))
         .listStyle(.insetGrouped)
-#else
+#elseif !os(tvOS)
 //        .background(.quaternary.opacity(0.5))
         .listStyle(.bordered)
 #endif

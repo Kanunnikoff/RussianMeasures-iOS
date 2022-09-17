@@ -79,9 +79,9 @@ struct WeightMeasuresView: View {
     var share: some View {
         VerticallyLabeledTextField(
             label: "Доля (пирог)",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в долях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в долях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.shareText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .share))
@@ -92,9 +92,9 @@ struct WeightMeasuresView: View {
     var bud: some View {
         VerticallyLabeledTextField(
             label: "Почка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в почках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в почках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.budText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .bud))
@@ -105,9 +105,9 @@ struct WeightMeasuresView: View {
     var spool: some View {
         VerticallyLabeledTextField(
             label: "Золотник",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в золотник",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в золотник",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.spoolText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .spool))
@@ -118,9 +118,9 @@ struct WeightMeasuresView: View {
     var lot: some View {
         VerticallyLabeledTextField(
             label: "Лот",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в лотах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в лотах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.lotText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .lot))
@@ -131,9 +131,9 @@ struct WeightMeasuresView: View {
     var pound: some View {
         VerticallyLabeledTextField(
             label: "Фунт",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в фунтах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в фунтах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.poundText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .pound))
@@ -144,9 +144,9 @@ struct WeightMeasuresView: View {
     var pud: some View {
         VerticallyLabeledTextField(
             label: "Пуд",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в пудах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в пудах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.pudText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .pud))
@@ -157,9 +157,9 @@ struct WeightMeasuresView: View {
     var berkovets: some View {
         VerticallyLabeledTextField(
             label: "Берковец",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в берковцах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в берковцах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.berkovetsText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .berkovets))
@@ -170,9 +170,9 @@ struct WeightMeasuresView: View {
     var gram: some View {
         VerticallyLabeledTextField(
             label: "Грамм",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в граммах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в граммах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.gramText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .gram))
@@ -183,9 +183,9 @@ struct WeightMeasuresView: View {
     var kilogram: some View {
         VerticallyLabeledTextField(
             label: "Килограмм",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в килограммах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в килограммах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.kilogramText,
             onTextChanged: { value in
                 subject.send(WeightMeasure(value: value, kind: .kilogram))

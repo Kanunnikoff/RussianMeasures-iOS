@@ -32,10 +32,12 @@ struct AboutView: View {
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
+#if !os(tvOS)
                 ShareLink(item: Config.APPSTORE_APP_URL) {
                     Text("Поделиться")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
+#endif
                 
                 Link(destination: Config.APPSTORE_DEVELOPER_URL) {
                     Text("Другие приложения")
@@ -43,10 +45,10 @@ struct AboutView: View {
                 }
             } header: {
                 Text("App Store")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionTitleFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
                 Text("Ваше мнение очень важно для меня. Пожалуйста, не поленитесь поставить оценку и написать отзыв.")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionFooterFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
             Section {
@@ -71,10 +73,10 @@ struct AboutView: View {
                 }
             } header: {
                 Text("Обратная связь")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionTitleFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
                 Text("В случае вопросов или предложений, я к Вашим услугам. Будем на связи!")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionFooterFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
             Section {
@@ -84,10 +86,10 @@ struct AboutView: View {
                 }
             } header: {
                 Text("Политика конфиденциальности")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionTitleFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
                 Text("Подробная информация о том, как приложение использует Ваши данные.")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionFooterFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
             Section {
@@ -102,10 +104,10 @@ struct AboutView: View {
                 }
             } header: {
                 Text("Поддержка")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionTitleFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
                 Text("Если Вам нравится результат моего труда, то Вы можете, при желании, поддержать меня одним из вышеперечисленных способов.")
-                    .font(isSystemFontAndSize ? .footnote : Config.customSectionFooterFont)
+                    .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
         }
         .navigationTitle("О программе")

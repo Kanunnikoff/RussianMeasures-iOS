@@ -26,9 +26,11 @@ struct ContentView: View {
 #if os(macOS)
         .frame(minWidth: 600, minHeight: 450)
 #endif
+#if !os(tvOS)
         .onAppear {
             Util.requestReviewIfNeeded()
         }
+#endif
     }
 }
 

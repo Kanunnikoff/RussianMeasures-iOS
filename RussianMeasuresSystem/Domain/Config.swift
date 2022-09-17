@@ -40,11 +40,23 @@ struct Config {
     
     //---
     
-    static let customFont: Font = .custom("Monomakh Unicode TT", size: 17)
+#if os(tvOS)
+    static let customBodyFont: Font = .custom("Monomakh Unicode TT", size: 29)
+    static let customHeadlineFont: Font = .custom("Monomakh Unicode TT", size: 38)
+    static let customSubhedlineFont: Font = .custom("Monomakh Unicode TT", size: 31)
+    static let customFootnoteFont: Font = .custom("Monomakh Unicode TT", size: 25)
+    static let customCaptionFont: Font = .custom("Monomakh Unicode TT", size: 25)
+#elseif os(macOS)
+    static let customBodyFont: Font = .custom("Monomakh Unicode TT", size: 13)
+    static let customHeadlineFont: Font = .custom("Monomakh Unicode TT", size: 13)
+    static let customSubhedlineFont: Font = .custom("Monomakh Unicode TT", size: 11)
+    static let customFootnoteFont: Font = .custom("Monomakh Unicode TT", size: 10)
+    static let customCaptionFont: Font = .custom("Monomakh Unicode TT", size: 10)
+#else
     static let customBodyFont: Font = .custom("Monomakh Unicode TT", size: 17)
     static let customHeadlineFont: Font = .custom("Monomakh Unicode TT", size: 17)
     static let customSubhedlineFont: Font = .custom("Monomakh Unicode TT", size: 15)
-    static let customSectionTitleFont: Font = .custom("Monomakh Unicode TT", size: 13)
-    static let customSectionFooterFont: Font = .custom("Monomakh Unicode TT", size: 13)
+    static let customFootnoteFont: Font = .custom("Monomakh Unicode TT", size: 13)
     static let customCaptionFont: Font = .custom("Monomakh Unicode TT", size: 12)
+#endif
 }

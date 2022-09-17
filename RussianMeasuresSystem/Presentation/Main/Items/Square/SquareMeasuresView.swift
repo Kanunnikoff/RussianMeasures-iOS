@@ -98,9 +98,9 @@ struct SquareMeasuresView: View {
     var line: some View {
         VerticallyLabeledTextField(
             label: "Кв. линия",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. линиях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. линиях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.lineText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .line))
@@ -111,9 +111,9 @@ struct SquareMeasuresView: View {
     var inch: some View {
         VerticallyLabeledTextField(
             label: "Кв. дюйм",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. дюймах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. дюймах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.inchText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .inch))
@@ -124,9 +124,9 @@ struct SquareMeasuresView: View {
     var vershok: some View {
         VerticallyLabeledTextField(
             label: "Кв. вершок",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. вершках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. вершках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.vershokText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .vershok))
@@ -137,9 +137,9 @@ struct SquareMeasuresView: View {
     var foot: some View {
         VerticallyLabeledTextField(
             label: "Кв. фут",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. футах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. футах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.footText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .foot))
@@ -150,9 +150,9 @@ struct SquareMeasuresView: View {
     var arshin: some View {
         VerticallyLabeledTextField(
             label: "Кв. аршин",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. аршинах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. аршинах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.arshinText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .arshin))
@@ -163,9 +163,9 @@ struct SquareMeasuresView: View {
     var fathom: some View {
         VerticallyLabeledTextField(
             label: "Кв. сажень",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. саженях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. саженях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.fathomText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .fathom))
@@ -176,9 +176,9 @@ struct SquareMeasuresView: View {
     var osminnik: some View {
         VerticallyLabeledTextField(
             label: "Осминник",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в осминниках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в осминниках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.osminnikText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .osminnik))
@@ -189,9 +189,9 @@ struct SquareMeasuresView: View {
     var chet: some View {
         VerticallyLabeledTextField(
             label: "Четь",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в четях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в четях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.chetText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .chet))
@@ -202,9 +202,9 @@ struct SquareMeasuresView: View {
     var dessiatin: some View {
         VerticallyLabeledTextField(
             label: "Десятина",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в десятинах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в десятинах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.dessiatinText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .dessiatin))
@@ -215,9 +215,9 @@ struct SquareMeasuresView: View {
     var verst: some View {
         VerticallyLabeledTextField(
             label: "Кв. верста",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. вёрстах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. вёрстах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.verstText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .verst))
@@ -228,9 +228,9 @@ struct SquareMeasuresView: View {
     var millimeter: some View {
         VerticallyLabeledTextField(
             label: "Кв. миллиметр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. миллиметрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. миллиметрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.millimeterText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .millimeter))
@@ -241,9 +241,9 @@ struct SquareMeasuresView: View {
     var centimeter: some View {
         VerticallyLabeledTextField(
             label: "Кв. сантиметр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. сантиметрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. сантиметрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.centimeterText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .centimeter))
@@ -254,9 +254,9 @@ struct SquareMeasuresView: View {
     var meter: some View {
         VerticallyLabeledTextField(
             label: "Кв. метр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кв. метрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кв. метрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.meterText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .meter))
@@ -267,9 +267,9 @@ struct SquareMeasuresView: View {
     var hectare: some View {
         VerticallyLabeledTextField(
             label: "Гектар",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в гектарах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в гектарах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.hectareText,
             onTextChanged: { value in
                 subject.send(SquareMeasure(value: value, kind: .hectare))

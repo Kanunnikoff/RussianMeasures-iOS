@@ -103,9 +103,9 @@ struct BulkSolidsMeasuresView: View {
     var glass: some View {
         VerticallyLabeledTextField(
             label: "Стакан",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в стаканах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в стаканах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.glassText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .glass))
@@ -116,9 +116,9 @@ struct BulkSolidsMeasuresView: View {
     var halfHalfHalfSmallQuadruple: some View {
         VerticallyLabeledTextField(
             label: "Пол-пол-пол-малый четверик",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в пол-пол-пол-малых четвериках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в пол-пол-пол-малых четвериках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.halfHalfHalfSmallQuadrupleText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .halfHalfHalfSmallQuadruple))
@@ -129,9 +129,9 @@ struct BulkSolidsMeasuresView: View {
     var halfHalfSmallQuadruple: some View {
         VerticallyLabeledTextField(
             label: "Пол-пол-малый четверик",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в пол-пол-малых четвериках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в пол-пол-малых четвериках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.halfHalfSmallQuadrupleText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .halfHalfSmallQuadruple))
@@ -142,9 +142,9 @@ struct BulkSolidsMeasuresView: View {
     var semiGarnet: some View {
         VerticallyLabeledTextField(
             label: "Полугарнец",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в полугарнецах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в полугарнецах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.semiGarnetText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .semiGarnet))
@@ -155,9 +155,9 @@ struct BulkSolidsMeasuresView: View {
     var garnets: some View {
         VerticallyLabeledTextField(
             label: "Гарнец",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в гарнецах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в гарнецах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.garnetsText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .garnets))
@@ -168,9 +168,9 @@ struct BulkSolidsMeasuresView: View {
     var four: some View {
         VerticallyLabeledTextField(
             label: "Четвёрка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в четвёрках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в четвёрках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.fourText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .four))
@@ -181,9 +181,9 @@ struct BulkSolidsMeasuresView: View {
     var halfQuad: some View {
         VerticallyLabeledTextField(
             label: "Получетверик",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в получетвериках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в получетвериках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.halfQuadText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .halfQuad))
@@ -194,9 +194,9 @@ struct BulkSolidsMeasuresView: View {
     var quad: some View {
         VerticallyLabeledTextField(
             label: "Четверик",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в четвериках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в четвериках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.quadText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .quad))
@@ -207,9 +207,9 @@ struct BulkSolidsMeasuresView: View {
     var polosmina: some View {
         VerticallyLabeledTextField(
             label: "Полосьмина",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в полосьминах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в полосьминах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.polosminaText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .polosmina))
@@ -220,9 +220,9 @@ struct BulkSolidsMeasuresView: View {
     var osmina: some View {
         VerticallyLabeledTextField(
             label: "Осьмина",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в осьминах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в осьминах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.osminaText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .osmina))
@@ -233,9 +233,9 @@ struct BulkSolidsMeasuresView: View {
     var quarter: some View {
         VerticallyLabeledTextField(
             label: "Четверть",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в четвертях",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в четвертях",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.quarterText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .quarter))
@@ -246,9 +246,9 @@ struct BulkSolidsMeasuresView: View {
     var polokova: some View {
         VerticallyLabeledTextField(
             label: "Полокова",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в полоковах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в полоковах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.polokovaText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .polokova))
@@ -259,9 +259,9 @@ struct BulkSolidsMeasuresView: View {
     var tub: some View {
         VerticallyLabeledTextField(
             label: "Кадка",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в кадках",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в кадках",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.tubText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .tub))
@@ -272,9 +272,9 @@ struct BulkSolidsMeasuresView: View {
     var cebra: some View {
         VerticallyLabeledTextField(
             label: "Цебр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в цебрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в цебрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.cebraText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .cebra))
@@ -285,9 +285,9 @@ struct BulkSolidsMeasuresView: View {
     var liters: some View {
         VerticallyLabeledTextField(
             label: "Литр",
-            labelFont: isSystemFontAndSize ? .headline : Config.customFont,
-            prompt: "Введите значение в литрах",
-            promptFont: isSystemFontAndSize ? .body : Config.customBodyFont,
+            labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
+            title: "Введите значение в литрах",
+            font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.literText,
             onTextChanged: { value in
                 subject.send(BulkSolidsMeasure(value: value, kind: .liter))
