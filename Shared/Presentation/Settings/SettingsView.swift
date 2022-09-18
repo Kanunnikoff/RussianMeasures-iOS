@@ -27,7 +27,7 @@ struct SettingsView: View {
         }
 #if os(iOS)
         .listStyle(.insetGrouped)
-#elseif !os(tvOS)
+#elseif !os(tvOS) && !os(watchOS)
         .listStyle(.inset)
 #endif
         .navigationTitle("Настройки")

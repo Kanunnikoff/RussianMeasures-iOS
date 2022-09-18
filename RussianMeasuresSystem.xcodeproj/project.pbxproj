@@ -7,6 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0CD19328D7171A00DBC566 /* RussianMeasuresSystemWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0CD19228D7171A00DBC566 /* RussianMeasuresSystemWatchApp.swift */; };
+		0A0CD19528D7171A00DBC566 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0CD19428D7171A00DBC566 /* ContentView.swift */; };
+		0A0CD19728D7171B00DBC566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0CD19628D7171B00DBC566 /* Assets.xcassets */; };
+		0A0CD19A28D7171B00DBC566 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0CD19928D7171B00DBC566 /* Preview Assets.xcassets */; };
+		0A0CD1A028D7187800DBC566 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958391289EB77C00640452 /* Util.swift */; };
+		0A0CD1A128D7188B00DBC566 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958390289EB77C00640452 /* Config.swift */; };
+		0A0CD1A228D7189400DBC566 /* SquareMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9928BBC48800DA4E14 /* SquareMeasure.swift */; };
+		0A0CD1A328D7189400DBC566 /* BulkSolidsMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47D85228C36A680023821E /* BulkSolidsMeasure.swift */; };
+		0A0CD1A428D7189400DBC566 /* WeightMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9B7828C52B7D001EADD0 /* WeightMeasure.swift */; };
+		0A0CD1A528D7189400DBC566 /* VolumeMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49D48C28BBF24800398C15 /* VolumeMeasure.swift */; };
+		0A0CD1A628D7189400DBC566 /* PieceItemsMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DBB28CC8FCC005519A1 /* PieceItemsMeasure.swift */; };
+		0A0CD1A728D7189400DBC566 /* PharmaceuticalMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB828CC7F4D005519A1 /* PharmaceuticalMeasure.swift */; };
+		0A0CD1A828D7189400DBC566 /* LiquidBodiesMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5DF55828C49D3300108026 /* LiquidBodiesMeasure.swift */; };
+		0A0CD1A928D7189400DBC566 /* LengthMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54340928B27EEE004C951C /* LengthMeasure.swift */; };
+		0A0CD1AA28D7189400DBC566 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54340B28B27F1D004C951C /* Measure.swift */; };
+		0A0CD1AB28D718A000DBC566 /* monomakh_unicode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A47D84428C351250023821E /* monomakh_unicode.ttf */; };
+		0A0CD1AC28D718A800DBC566 /* VerticallyLabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9428BB637600DA4E14 /* VerticallyLabeledTextField.swift */; };
+		0A0CD1AD28D718A800DBC566 /* BorderLabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9628BB705700DA4E14 /* BorderLabeledTextField.swift */; };
+		0A0CD1AE28D718AD00DBC566 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837A289EB76600640452 /* SettingsView.swift */; };
+		0A0CD1AF28D718C000DBC566 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958380289EB76600640452 /* AboutView.swift */; };
+		0A0CD1B028D718C400DBC566 /* WidthThresholdReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958381289EB76600640452 /* WidthThresholdReader.swift */; };
+		0A0CD1B128D718D000DBC566 /* MeasuresItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54340728B2648C004C951C /* MeasuresItemDetails.swift */; };
+		0A0CD1B228D718D400DBC566 /* PieceItemsMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DBD28CC8FDC005519A1 /* PieceItemsMeasuresViewModel.swift */; };
+		0A0CD1B328D718D400DBC566 /* PieceItemsMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DBF28CC8FE7005519A1 /* PieceItemsMeasuresView.swift */; };
+		0A0CD1B428D718D900DBC566 /* WeightMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9B7628C52B60001EADD0 /* WeightMeasuresView.swift */; };
+		0A0CD1B528D718D900DBC566 /* PharmaceuticalMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB428CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift */; };
+		0A0CD1B628D718D900DBC566 /* WeightMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9B7428C52B4D001EADD0 /* WeightMeasuresViewModel.swift */; };
+		0A0CD1B728D718D900DBC566 /* PharmaceuticalMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB628CC7F36005519A1 /* PharmaceuticalMeasuresView.swift */; };
+		0A0CD1B828D718DF00DBC566 /* LiquidBodiesMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5DF55628C49D0B00108026 /* LiquidBodiesMeasuresView.swift */; };
+		0A0CD1B928D718DF00DBC566 /* LiquidBodiesMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5DF55428C49CFE00108026 /* LiquidBodiesMeasuresViewModel.swift */; };
+		0A0CD1BA28D718E500DBC566 /* BulkSolidsMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47D84E28C367A00023821E /* BulkSolidsMeasuresView.swift */; };
+		0A0CD1BB28D718E500DBC566 /* VolumeMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49D48A28BBF1D100398C15 /* VolumeMeasuresView.swift */; };
+		0A0CD1BC28D718E500DBC566 /* VolumeMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49D48E28BBF32C00398C15 /* VolumeMeasuresViewModel.swift */; };
+		0A0CD1BD28D718E500DBC566 /* BulkSolidsMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47D85028C367BB0023821E /* BulkSolidsMeasuresViewModel.swift */; };
+		0A0CD1BE28D718E900DBC566 /* SquareMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9E28BBC63D00DA4E14 /* SquareMeasuresView.swift */; };
+		0A0CD1BF28D718E900DBC566 /* SquareMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC44E9C28BBC5C100DA4E14 /* SquareMeasuresViewModel.swift */; };
+		0A0CD1C028D718EF00DBC566 /* LengthMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54340428B25CD5004C951C /* LengthMeasuresView.swift */; };
+		0A0CD1C128D718EF00DBC566 /* LengthMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54341028B280FC004C951C /* LengthMeasuresViewModel.swift */; };
+		0A0CD1C728D71C0B00DBC566 /* DetailColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0CD1C628D71C0B00DBC566 /* DetailColumn.swift */; };
 		0A47D84A28C351250023821E /* monomakh_unicode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A47D84428C351250023821E /* monomakh_unicode.ttf */; };
 		0A47D84F28C367A00023821E /* BulkSolidsMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47D84E28C367A00023821E /* BulkSolidsMeasuresView.swift */; };
 		0A47D85128C367BB0023821E /* BulkSolidsMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47D85028C367BB0023821E /* BulkSolidsMeasuresViewModel.swift */; };
@@ -37,6 +76,11 @@
 		0A95838E289EB76600640452 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958385289EB76600640452 /* MainView.swift */; };
 		0A958393289EB77C00640452 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958390289EB77C00640452 /* Config.swift */; };
 		0A958394289EB77C00640452 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958391289EB77C00640452 /* Util.swift */; };
+		0AA7CB2028D7A22E0023ABB2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A958385289EB76600640452 /* MainView.swift */; };
+		0AA7CB2228D7A27E0023ABB2 /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7CB2128D7A27E0023ABB2 /* SidebarItem.swift */; };
+		0AA7CB2328D7A27E0023ABB2 /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7CB2128D7A27E0023ABB2 /* SidebarItem.swift */; };
+		0AA7CB2628D7A3340023ABB2 /* MeasuresItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7CB2528D7A3340023ABB2 /* MeasuresItem.swift */; };
+		0AA7CB2728D7A3340023ABB2 /* MeasuresItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7CB2528D7A3340023ABB2 /* MeasuresItem.swift */; };
 		0AAF7DB528CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB428CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift */; };
 		0AAF7DB728CC7F36005519A1 /* PharmaceuticalMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB628CC7F36005519A1 /* PharmaceuticalMeasuresView.swift */; };
 		0AAF7DB928CC7F4D005519A1 /* PharmaceuticalMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF7DB828CC7F4D005519A1 /* PharmaceuticalMeasure.swift */; };
@@ -51,6 +95,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0CD19028D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RussianMeasuresSystemWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0CD19228D7171A00DBC566 /* RussianMeasuresSystemWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussianMeasuresSystemWatchApp.swift; sourceTree = "<group>"; };
+		0A0CD19428D7171A00DBC566 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A0CD19628D7171B00DBC566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A0CD19928D7171B00DBC566 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A0CD1C628D71C0B00DBC566 /* DetailColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailColumn.swift; sourceTree = "<group>"; };
+		0A0CD1C828D7236600DBC566 /* RussianMeasuresSystemWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RussianMeasuresSystemWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0A27777128BD50E100C73B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0A47D84428C351250023821E /* monomakh_unicode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = monomakh_unicode.ttf; sourceTree = "<group>"; };
 		0A47D84E28C367A00023821E /* BulkSolidsMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkSolidsMeasuresView.swift; sourceTree = "<group>"; };
@@ -84,6 +135,8 @@
 		0A958385289EB76600640452 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0A958390289EB77C00640452 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		0A958391289EB77C00640452 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		0AA7CB2128D7A27E0023ABB2 /* SidebarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarItem.swift; sourceTree = "<group>"; };
+		0AA7CB2528D7A3340023ABB2 /* MeasuresItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuresItem.swift; sourceTree = "<group>"; };
 		0AAF7DB428CC7F21005519A1 /* PharmaceuticalMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaceuticalMeasuresViewModel.swift; sourceTree = "<group>"; };
 		0AAF7DB628CC7F36005519A1 /* PharmaceuticalMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaceuticalMeasuresView.swift; sourceTree = "<group>"; };
 		0AAF7DB828CC7F4D005519A1 /* PharmaceuticalMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaceuticalMeasure.swift; sourceTree = "<group>"; };
@@ -98,6 +151,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A0CD18D28D7171A00DBC566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A747CB0289E6851005C5EEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,6 +168,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0CD19128D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				0A0CD1C928D7269800DBC566 /* Presentation */,
+				0A0CD1C828D7236600DBC566 /* RussianMeasuresSystemWatch-Watch-App-Info.plist */,
+				0A0CD19228D7171A00DBC566 /* RussianMeasuresSystemWatchApp.swift */,
+				0A0CD19628D7171B00DBC566 /* Assets.xcassets */,
+				0A0CD19828D7171B00DBC566 /* Preview Content */,
+			);
+			path = "RussianMeasuresSystemWatch Watch App";
+			sourceTree = "<group>";
+		};
+		0A0CD19828D7171B00DBC566 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A0CD19928D7171B00DBC566 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A0CD1C328D71B4300DBC566 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0A0CD1C628D71C0B00DBC566 /* DetailColumn.swift */,
+				0A0CD19428D7171A00DBC566 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0A0CD1C928D7269800DBC566 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0A0CD1C328D71B4300DBC566 /* Navigation */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0A0CD1CA28D726C200DBC566 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0A958381289EB76600640452 /* WidthThresholdReader.swift */,
+				0AA7CB2428D7A3150023ABB2 /* Navigation */,
+				0A958382289EB76600640452 /* Main */,
+				0A95837F289EB76600640452 /* About */,
+				0A958379289EB76600640452 /* Settings */,
+				0AC44E9028BB5BBC00DA4E14 /* Custom */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0A0CD1CB28D726CD00DBC566 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0A0CD1CA28D726C200DBC566 /* Presentation */,
+				0A95838F289EB77C00640452 /* Domain */,
+				0A27776E28BD50A900C73B55 /* Fonts */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		0A27776E28BD50A900C73B55 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +323,9 @@
 		0A747CAA289E6851005C5EEA = {
 			isa = PBXGroup;
 			children = (
+				0A0CD1CB28D726CD00DBC566 /* Shared */,
 				0A747CB5289E6851005C5EEA /* RussianMeasuresSystem */,
+				0A0CD19128D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App */,
 				0A747CB4289E6851005C5EEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -212,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */,
+				0A0CD19028D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,8 +343,6 @@
 			isa = PBXGroup;
 			children = (
 				0A27777128BD50E100C73B55 /* Info.plist */,
-				0A27776E28BD50A900C73B55 /* Fonts */,
-				0A95838F289EB77C00640452 /* Domain */,
 				0A958378289EB76600640452 /* Presentation */,
 				0A747CB6289E6851005C5EEA /* RussianMeasuresSystemApp.swift */,
 				0A747CBA289E6852005C5EEA /* Assets.xcassets */,
@@ -242,12 +363,7 @@
 		0A958378289EB76600640452 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				0AC44E9028BB5BBC00DA4E14 /* Custom */,
-				0A958379289EB76600640452 /* Settings */,
 				0A95837B289EB76600640452 /* Navigation */,
-				0A95837F289EB76600640452 /* About */,
-				0A958381289EB76600640452 /* WidthThresholdReader.swift */,
-				0A958382289EB76600640452 /* Main */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -298,6 +414,15 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		0AA7CB2428D7A3150023ABB2 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0AA7CB2128D7A27E0023ABB2 /* SidebarItem.swift */,
+				0AA7CB2528D7A3340023ABB2 /* MeasuresItem.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		0AAF7DB328CC7EF2005519A1 /* Pharmaceutical */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +462,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A0CD18F28D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0CD19D28D7171B00DBC566 /* Build configuration list for PBXNativeTarget "RussianMeasuresSystemWatch Watch App" */;
+			buildPhases = (
+				0A0CD18C28D7171A00DBC566 /* Sources */,
+				0A0CD18D28D7171A00DBC566 /* Frameworks */,
+				0A0CD18E28D7171A00DBC566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RussianMeasuresSystemWatch Watch App";
+			productName = "RussianMeasuresSystemWatch Watch App";
+			productReference = 0A0CD19028D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0A747CB2289E6851005C5EEA /* RussianMeasuresSystem */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A747CC2289E6852005C5EEA /* Build configuration list for PBXNativeTarget "RussianMeasuresSystem" */;
@@ -364,6 +506,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					0A0CD18F28D7171A00DBC566 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					0A747CB2289E6851005C5EEA = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -383,11 +528,22 @@
 			projectRoot = "";
 			targets = (
 				0A747CB2289E6851005C5EEA /* RussianMeasuresSystem */,
+				0A0CD18F28D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A0CD18E28D7171A00DBC566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0CD1AB28D718A000DBC566 /* monomakh_unicode.ttf in Resources */,
+				0A0CD19A28D7171B00DBC566 /* Preview Assets.xcassets in Resources */,
+				0A0CD19728D7171B00DBC566 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A747CB1289E6851005C5EEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,11 +557,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A0CD18C28D7171A00DBC566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0CD1A328D7189400DBC566 /* BulkSolidsMeasure.swift in Sources */,
+				0A0CD1C028D718EF00DBC566 /* LengthMeasuresView.swift in Sources */,
+				0A0CD1BC28D718E500DBC566 /* VolumeMeasuresViewModel.swift in Sources */,
+				0A0CD1BF28D718E900DBC566 /* SquareMeasuresViewModel.swift in Sources */,
+				0A0CD1B028D718C400DBC566 /* WidthThresholdReader.swift in Sources */,
+				0AA7CB2028D7A22E0023ABB2 /* MainView.swift in Sources */,
+				0AA7CB2728D7A3340023ABB2 /* MeasuresItem.swift in Sources */,
+				0A0CD1A228D7189400DBC566 /* SquareMeasure.swift in Sources */,
+				0A0CD1AA28D7189400DBC566 /* Measure.swift in Sources */,
+				0A0CD1B328D718D400DBC566 /* PieceItemsMeasuresView.swift in Sources */,
+				0A0CD1C728D71C0B00DBC566 /* DetailColumn.swift in Sources */,
+				0A0CD1AE28D718AD00DBC566 /* SettingsView.swift in Sources */,
+				0A0CD1A528D7189400DBC566 /* VolumeMeasure.swift in Sources */,
+				0A0CD1A728D7189400DBC566 /* PharmaceuticalMeasure.swift in Sources */,
+				0A0CD1B228D718D400DBC566 /* PieceItemsMeasuresViewModel.swift in Sources */,
+				0A0CD1B728D718D900DBC566 /* PharmaceuticalMeasuresView.swift in Sources */,
+				0A0CD1BD28D718E500DBC566 /* BulkSolidsMeasuresViewModel.swift in Sources */,
+				0A0CD1A828D7189400DBC566 /* LiquidBodiesMeasure.swift in Sources */,
+				0AA7CB2328D7A27E0023ABB2 /* SidebarItem.swift in Sources */,
+				0A0CD19528D7171A00DBC566 /* ContentView.swift in Sources */,
+				0A0CD1B628D718D900DBC566 /* WeightMeasuresViewModel.swift in Sources */,
+				0A0CD1AC28D718A800DBC566 /* VerticallyLabeledTextField.swift in Sources */,
+				0A0CD1B528D718D900DBC566 /* PharmaceuticalMeasuresViewModel.swift in Sources */,
+				0A0CD1B928D718DF00DBC566 /* LiquidBodiesMeasuresViewModel.swift in Sources */,
+				0A0CD1AD28D718A800DBC566 /* BorderLabeledTextField.swift in Sources */,
+				0A0CD1A028D7187800DBC566 /* Util.swift in Sources */,
+				0A0CD1B128D718D000DBC566 /* MeasuresItemDetails.swift in Sources */,
+				0A0CD19328D7171A00DBC566 /* RussianMeasuresSystemWatchApp.swift in Sources */,
+				0A0CD1A928D7189400DBC566 /* LengthMeasure.swift in Sources */,
+				0A0CD1BA28D718E500DBC566 /* BulkSolidsMeasuresView.swift in Sources */,
+				0A0CD1B428D718D900DBC566 /* WeightMeasuresView.swift in Sources */,
+				0A0CD1B828D718DF00DBC566 /* LiquidBodiesMeasuresView.swift in Sources */,
+				0A0CD1A128D7188B00DBC566 /* Config.swift in Sources */,
+				0A0CD1AF28D718C000DBC566 /* AboutView.swift in Sources */,
+				0A0CD1A628D7189400DBC566 /* PieceItemsMeasure.swift in Sources */,
+				0A0CD1BB28D718E500DBC566 /* VolumeMeasuresView.swift in Sources */,
+				0A0CD1C128D718EF00DBC566 /* LengthMeasuresViewModel.swift in Sources */,
+				0A0CD1BE28D718E900DBC566 /* SquareMeasuresView.swift in Sources */,
+				0A0CD1A428D7189400DBC566 /* WeightMeasure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A747CAF289E6851005C5EEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0AAF7DB728CC7F36005519A1 /* PharmaceuticalMeasuresView.swift in Sources */,
+				0AA7CB2628D7A3340023ABB2 /* MeasuresItem.swift in Sources */,
 				0A54340528B25CD5004C951C /* LengthMeasuresView.swift in Sources */,
 				0A958387289EB76600640452 /* DetailColumn.swift in Sources */,
 				0AAF7DBE28CC8FDC005519A1 /* PieceItemsMeasuresViewModel.swift in Sources */,
@@ -423,6 +626,7 @@
 				0AAF7DBC28CC8FCC005519A1 /* PieceItemsMeasure.swift in Sources */,
 				0AC44E9D28BBC5C100DA4E14 /* SquareMeasuresViewModel.swift in Sources */,
 				0A49D48F28BBF32C00398C15 /* VolumeMeasuresViewModel.swift in Sources */,
+				0AA7CB2228D7A27E0023ABB2 /* SidebarItem.swift in Sources */,
 				0A54340C28B27F1D004C951C /* Measure.swift in Sources */,
 				0A49D48B28BBF1D100398C15 /* VolumeMeasuresView.swift in Sources */,
 				0A95838B289EB76600640452 /* WidthThresholdReader.swift in Sources */,
@@ -449,6 +653,71 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0A0CD19B28D7171B00DBC566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystemWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RussianMeasuresSystemWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Русские меры";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		0A0CD19C28D7171B00DBC566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystemWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RussianMeasuresSystemWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Русские меры";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		0A747CC0289E6852005C5EEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -571,7 +840,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystem/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
@@ -620,7 +889,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystem/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
@@ -661,6 +930,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A0CD19D28D7171B00DBC566 /* Build configuration list for PBXNativeTarget "RussianMeasuresSystemWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0CD19B28D7171B00DBC566 /* Debug */,
+				0A0CD19C28D7171B00DBC566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0A747CAE289E6851005C5EEA /* Build configuration list for PBXProject "RussianMeasuresSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

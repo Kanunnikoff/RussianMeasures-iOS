@@ -19,6 +19,8 @@ struct VerticallyLabeledTextField: View {
     @FocusState private var isFocused
     @State private var isEditing: Bool = false
     
+    @State private var isCommited: Bool = false
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text(label)
@@ -29,7 +31,12 @@ struct VerticallyLabeledTextField: View {
                     title,
                     text: $text,
                     onEditingChanged: { editing in
+                        print("VerticallyLabeledTextField -> onEditingChanged(): editing=\(editing)")
                         isEditing = editing
+                    },
+                    onCommit: {
+                        print("VerticallyLabeledTextField -> onCommit()")
+                        isCommited = true
                     }
                 )
                 .font(font)
@@ -47,9 +54,14 @@ struct VerticallyLabeledTextField: View {
                 .textFieldStyle(.roundedBorder)
 #endif
                 .onChange(of: text) { value in
-                    if isFocused || isEditing {
+                    print("VerticallyLabeledTextField -> onChange(): text=\(text), isFocused=\(isFocused), isEditing=\(isEditing), isCommited=\(isCommited)")
+                    if isFocused || isEditing || isCommited {
+                        isCommited = false
                         onTextChanged(value)
                     }
+                }
+                .onChange(of: isFocused) { focused in
+                    print("VerticallyLabeledTextField -> onChange(): isFocused=\(focused)")
                 }
                 
 #if os(iOS)

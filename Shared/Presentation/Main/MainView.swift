@@ -8,22 +8,9 @@
 import SwiftUI
 import Combine
 
-enum MeasuresItem: String, Hashable {
-    case length
-    case square
-    case volume
-    case bulkSolids
-    case liquidBodies
-    case weight
-    case pharmaceutical
-    case pieceItems
-}
-
 struct MainView: View {
     
     @State private var cancellable: Cancellable? = nil
-    @State private var isFromCyrillicToGlagolitic: Bool = true
-    @State private var showImageScreen: Bool = false
     
     @AppStorage("SettingsView.isSystemFontAndSize")
     private var isSystemFontAndSize: Bool = true
@@ -90,13 +77,10 @@ struct MainView: View {
             MeasuresItemDetails(item: item)
         }
 #if os(iOS)
-//        .background(Color(uiColor: .systemGroupedBackground))
         .listStyle(.insetGrouped)
-#elseif !os(tvOS)
-//        .background(.quaternary.opacity(0.5))
+#elseif !os(tvOS) && !os(watchOS)
         .listStyle(.bordered)
 #endif
-//        .background()
         .navigationTitle(Util.getAppDisplayName())
     }
 }

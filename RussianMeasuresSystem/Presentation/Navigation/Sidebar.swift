@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-enum SidebarItem: Hashable {
-    case main
-    case settings
-    case about
-}
-
 struct Sidebar: View {
 
     @Binding var selection: SidebarItem?

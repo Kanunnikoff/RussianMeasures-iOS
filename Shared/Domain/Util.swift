@@ -28,13 +28,13 @@ struct Util {
         return formatter
     }()
     
+#if !os(tvOS) && !os(watchOS)
     @AppStorage("Util.launchesCount")
     private static var launchesCount: Int = 0
     
     @AppStorage("Util.lastVersionPromtedForReview")
     private static var lastVersionPromtedForReview: String = ""
     
-#if !os(tvOS)
     @Environment(\.requestReview) static var requestReview
 #endif
     
@@ -71,7 +71,7 @@ struct Util {
         return build
     }
     
-#if !os(tvOS)
+#if !os(tvOS) && !os(watchOS)
     @MainActor static func requestReviewIfNeeded() {
         launchesCount += 1
         
