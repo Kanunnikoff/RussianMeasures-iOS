@@ -57,6 +57,7 @@ struct AboutView: View {
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
+#if !os(watchOS)
                 Link(destination: Config.YOUTUBE_URL) {
                     Text("Мой YouTube-канал")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
@@ -71,6 +72,7 @@ struct AboutView: View {
                     Text("Я в Instagram")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
+#endif
             } header: {
                 Text("Обратная связь")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
@@ -79,6 +81,7 @@ struct AboutView: View {
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
+#if !os(watchOS)
             Section {
                 Link(destination: Config.PRIVACY_POLICY_URL) {
                     Text("Читать")
@@ -109,6 +112,7 @@ struct AboutView: View {
                 Text("Если Вам нравится результат моего труда, то Вы можете, при желании, поддержать меня одним из вышеперечисленных способов.")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
+#endif
         }
         .navigationTitle("О программе")
     }
