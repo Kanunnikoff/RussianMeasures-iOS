@@ -19,6 +19,9 @@ struct PharmaceuticalMeasuresView: View {
     @AppStorage("SettingsView.isSystemFontAndSize")
     private var isSystemFontAndSize: Bool = true
     
+    @AppStorage("SettingsView.isPreRevolutionary")
+    private var isPreRevolutionary: Bool = false
+    
     var body: some View {
         WidthThresholdReader(widthThreshold: 520) { proxy in
             ScrollView(showsIndicators: false) {
@@ -56,7 +59,7 @@ struct PharmaceuticalMeasuresView: View {
             }
             .scrollDismissesKeyboard(.immediately)
         }
-        .navigationTitle("Аптекарские")
+        .navigationTitle(isPreRevolutionary ? "Аптекарскія" : "Аптекарские")
         .onAppear {
             cancellable = subject
                 .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
@@ -71,9 +74,9 @@ struct PharmaceuticalMeasuresView: View {
     
     var gran: some View {
         VerticallyLabeledTextField(
-            label: "Гран",
+            label: isPreRevolutionary ? "Гранъ" : "Гран",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в гранах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​гранахъ" : "Введите значение в гранах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.granText,
             onTextChanged: { value in
@@ -84,9 +87,9 @@ struct PharmaceuticalMeasuresView: View {
     
     var scruple: some View {
         VerticallyLabeledTextField(
-            label: "Скрупул",
+            label: isPreRevolutionary ? "Скрупулъ" : "Скрупул",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в скрупулах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​скрупулахъ" : "Введите значение в скрупулах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.scrupleText,
             onTextChanged: { value in
@@ -99,7 +102,7 @@ struct PharmaceuticalMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Драхма",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в драхмах",
+            title: isPreRevolutionary ? "Введите значеніе въ драхмахъ" : "Введите значение в драхмах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.drachmaText,
             onTextChanged: { value in
@@ -110,9 +113,9 @@ struct PharmaceuticalMeasuresView: View {
     
     var ounce: some View {
         VerticallyLabeledTextField(
-            label: "Унция",
+            label: isPreRevolutionary ? "Унція" : "Унция",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в унциях",
+            title: isPreRevolutionary ? "Введите значеніе въ унціяхъ" : "Введите значение в унциях",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.ounceText,
             onTextChanged: { value in
@@ -123,9 +126,9 @@ struct PharmaceuticalMeasuresView: View {
     
     var pound: some View {
         VerticallyLabeledTextField(
-            label: "Фунт",
+            label: isPreRevolutionary ? "Фунтъ" : "Фунт",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в фунтах",
+            title: isPreRevolutionary ? "Введите значеніе въ фунтахъ" : "Введите значение в фунтах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.poundText,
             onTextChanged: { value in
@@ -136,9 +139,9 @@ struct PharmaceuticalMeasuresView: View {
     
     var milligram: some View {
         VerticallyLabeledTextField(
-            label: "Миллиграмм",
+            label: isPreRevolutionary ? "Миллиграммъ" : "Миллиграмм",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в миллиграммах",
+            title: isPreRevolutionary ? "Введите значеніе въ миллиграммахъ" : "Введите значение в миллиграммах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.milligramText,
             onTextChanged: { value in
@@ -149,9 +152,9 @@ struct PharmaceuticalMeasuresView: View {
     
     var gram: some View {
         VerticallyLabeledTextField(
-            label: "Грамм",
+            label: isPreRevolutionary ? "Граммъ" : "Грамм",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в граммах",
+            title: isPreRevolutionary ? "Введите значеніе въ граммахъ" : "Введите значение в граммах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.gramText,
             onTextChanged: { value in

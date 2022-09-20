@@ -11,6 +11,9 @@ struct ContentView: View {
     
     @State private var path: NavigationPath = NavigationPath([SidebarItem.main])
     
+    @AppStorage("SettingsView.isPreRevolutionary")
+    private var isPreRevolutionary: Bool = false
+    
     var body: some View {
         NavigationStack(path: $path) {
             List {
@@ -23,7 +26,7 @@ struct ContentView: View {
                 }
 
                 NavigationLink(value: SidebarItem.about) {
-                    Label("О программе", systemImage: "info.circle")
+                    Label(isPreRevolutionary ? "О программѣ" : "О программе", systemImage: "info.circle")
                 }
             }
             .navigationDestination(for: SidebarItem.self) { item in

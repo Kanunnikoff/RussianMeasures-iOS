@@ -11,6 +11,9 @@ struct Sidebar: View {
 
     @Binding var selection: SidebarItem?
     
+    @AppStorage("SettingsView.isPreRevolutionary")
+    private var isPreRevolutionary: Bool = false
+    
     var body: some View {
         List(selection: $selection) {
             NavigationLink(value: SidebarItem.main) {
@@ -22,7 +25,7 @@ struct Sidebar: View {
             }
             
             NavigationLink(value: SidebarItem.about) {
-                Label("О программе", systemImage: "info.circle")
+                Label(isPreRevolutionary ? "О программѣ" : "О программе", systemImage: "info.circle")
             }
         }
         .navigationTitle("Меню")

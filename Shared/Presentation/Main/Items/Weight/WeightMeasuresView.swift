@@ -19,6 +19,9 @@ struct WeightMeasuresView: View {
     @AppStorage("SettingsView.isSystemFontAndSize")
     private var isSystemFontAndSize: Bool = true
     
+    @AppStorage("SettingsView.isPreRevolutionary")
+    private var isPreRevolutionary: Bool = false
+    
     var body: some View {
         WidthThresholdReader(widthThreshold: 520) { proxy in
             ScrollView(showsIndicators: false) {
@@ -63,7 +66,7 @@ struct WeightMeasuresView: View {
             }
             .scrollDismissesKeyboard(.immediately)
         }
-        .navigationTitle("Меры веса")
+        .navigationTitle(isPreRevolutionary ? "Мѣры вѣса" : "Меры веса")
         .onAppear {
             cancellable = subject
                 .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
@@ -78,9 +81,9 @@ struct WeightMeasuresView: View {
     
     var share: some View {
         VerticallyLabeledTextField(
-            label: "Доля (пирог)",
+            label: isPreRevolutionary ? "Доля (пирогъ)" : "Доля (пирог)",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в долях",
+            title: isPreRevolutionary ? "Введите значеніе въ доляхъ" : "Введите значение в долях",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.shareText,
             onTextChanged: { value in
@@ -93,7 +96,7 @@ struct WeightMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Почка",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в почках",
+            title: isPreRevolutionary ? "Введите значеніе въ почкахъ" : "Введите значение в почках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.budText,
             onTextChanged: { value in
@@ -104,9 +107,9 @@ struct WeightMeasuresView: View {
     
     var spool: some View {
         VerticallyLabeledTextField(
-            label: "Золотник",
+            label: isPreRevolutionary ? "Золотникъ" : "Золотник",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в золотник",
+            title: isPreRevolutionary ? "Введите значеніе въ золотникахъ" : "Введите значение в золотниках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.spoolText,
             onTextChanged: { value in
@@ -117,9 +120,9 @@ struct WeightMeasuresView: View {
     
     var lot: some View {
         VerticallyLabeledTextField(
-            label: "Лот",
+            label: isPreRevolutionary ? "Лотъ" : "Лот",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в лотах",
+            title: isPreRevolutionary ? "Введите значеніе въ лотахъ" : "Введите значение в лотах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.lotText,
             onTextChanged: { value in
@@ -130,9 +133,9 @@ struct WeightMeasuresView: View {
     
     var pound: some View {
         VerticallyLabeledTextField(
-            label: "Фунт",
+            label: isPreRevolutionary ? "Фунтъ" : "Фунт",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в фунтах",
+            title: isPreRevolutionary ? "Введите значеніе въ фунтахъ" : "Введите значение в фунтах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.poundText,
             onTextChanged: { value in
@@ -143,9 +146,9 @@ struct WeightMeasuresView: View {
     
     var pud: some View {
         VerticallyLabeledTextField(
-            label: "Пуд",
+            label: isPreRevolutionary ? "Пудъ" : "Пуд",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в пудах",
+            title: isPreRevolutionary ? "Введите значеніе въ пудахъ" : "Введите значение в пудах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.pudText,
             onTextChanged: { value in
@@ -156,9 +159,9 @@ struct WeightMeasuresView: View {
     
     var berkovets: some View {
         VerticallyLabeledTextField(
-            label: "Берковец",
+            label: isPreRevolutionary ? "Берковецъ" : "Берковец",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в берковцах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​берковцахъ" : "Введите значение в берковцах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.berkovetsText,
             onTextChanged: { value in
@@ -169,9 +172,9 @@ struct WeightMeasuresView: View {
     
     var gram: some View {
         VerticallyLabeledTextField(
-            label: "Грамм",
+            label: isPreRevolutionary ? "Граммъ" : "Грамм",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в граммах",
+            title: isPreRevolutionary ? "Введите значеніе въ граммахъ" : "Введите значение в граммах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.gramText,
             onTextChanged: { value in
@@ -182,9 +185,9 @@ struct WeightMeasuresView: View {
     
     var kilogram: some View {
         VerticallyLabeledTextField(
-            label: "Килограмм",
+            label: isPreRevolutionary ? "Килограммъ" : "Килограмм",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в килограммах",
+            title: isPreRevolutionary ? "Введите значеніе въ килограммахъ" : "Введите значение в килограммах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.kilogramText,
             onTextChanged: { value in

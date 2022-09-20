@@ -19,6 +19,9 @@ struct SquareMeasuresView: View {
     @AppStorage("SettingsView.isSystemFontAndSize")
     private var isSystemFontAndSize: Bool = true
     
+    @AppStorage("SettingsView.isPreRevolutionary")
+    private var isPreRevolutionary: Bool = false
+    
     var body: some View {
         WidthThresholdReader(widthThreshold: 520) { proxy in
             ScrollView(showsIndicators: false) {
@@ -82,7 +85,7 @@ struct SquareMeasuresView: View {
             }
             .scrollDismissesKeyboard(.immediately)
         }
-        .navigationTitle("Меры площади")
+        .navigationTitle(isPreRevolutionary ? "Мѣры площади" : "Меры площади")
         .onAppear {
             cancellable = subject
                 .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
@@ -97,9 +100,9 @@ struct SquareMeasuresView: View {
     
     var line: some View {
         VerticallyLabeledTextField(
-            label: "Кв. линия",
+            label: isPreRevolutionary ? "​Кв​. линія" : "Кв. линия",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. линиях",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. линіяхъ" : "Введите значение в кв. линиях",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.lineText,
             onTextChanged: { value in
@@ -110,9 +113,9 @@ struct SquareMeasuresView: View {
     
     var inch: some View {
         VerticallyLabeledTextField(
-            label: "Кв. дюйм",
+            label: isPreRevolutionary ? "​Кв​. дюймъ" : "Кв. дюйм",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. дюймах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. дюймахъ" : "Введите значение в кв. дюймах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.inchText,
             onTextChanged: { value in
@@ -123,9 +126,9 @@ struct SquareMeasuresView: View {
     
     var vershok: some View {
         VerticallyLabeledTextField(
-            label: "Кв. вершок",
+            label: isPreRevolutionary ? "​Кв​. вершокъ" : "Кв. вершок",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. вершках",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. вершкахъ" : "Введите значение в кв. вершках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.vershokText,
             onTextChanged: { value in
@@ -136,9 +139,9 @@ struct SquareMeasuresView: View {
     
     var foot: some View {
         VerticallyLabeledTextField(
-            label: "Кв. фут",
+            label: isPreRevolutionary ? "​Кв​. футъ" : "Кв. фут",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. футах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. футахъ" : "Введите значение в кв. футах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.footText,
             onTextChanged: { value in
@@ -149,9 +152,9 @@ struct SquareMeasuresView: View {
     
     var arshin: some View {
         VerticallyLabeledTextField(
-            label: "Кв. аршин",
+            label: isPreRevolutionary ? "​Кв​. аршинъ" : "Кв. аршин",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. аршинах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. аршинахъ" : "Введите значение в кв. аршинах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.arshinText,
             onTextChanged: { value in
@@ -164,7 +167,7 @@ struct SquareMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Кв. сажень",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. саженях",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. саженяхъ" : "Введите значение в кв. саженях",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.fathomText,
             onTextChanged: { value in
@@ -175,9 +178,9 @@ struct SquareMeasuresView: View {
     
     var osminnik: some View {
         VerticallyLabeledTextField(
-            label: "Осминник",
+            label: isPreRevolutionary ? "Осминникъ" : "Осминник",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в осминниках",
+            title: isPreRevolutionary ? "Введите значеніе въ ​осминникахъ" : "Введите значение в осминниках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.osminnikText,
             onTextChanged: { value in
@@ -190,7 +193,7 @@ struct SquareMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Четь",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в четях",
+            title: isPreRevolutionary ? "Введите значеніе въ ​четяхъ" : "Введите значение в четях",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.chetText,
             onTextChanged: { value in
@@ -203,7 +206,7 @@ struct SquareMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Десятина",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в десятинах",
+            title: isPreRevolutionary ? "Введите значеніе въ десятинахъ" : "Введите значение в десятинах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.dessiatinText,
             onTextChanged: { value in
@@ -216,7 +219,7 @@ struct SquareMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Кв. верста",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. вёрстах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. верстахъ" : "Введите значение в кв. вёрстах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.verstText,
             onTextChanged: { value in
@@ -227,9 +230,9 @@ struct SquareMeasuresView: View {
     
     var millimeter: some View {
         VerticallyLabeledTextField(
-            label: "Кв. миллиметр",
+            label: isPreRevolutionary ? "​Кв​. миллиметръ" : "Кв. миллиметр",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. миллиметрах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. миллиметрахъ" : "Введите значение в кв. миллиметрах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.millimeterText,
             onTextChanged: { value in
@@ -240,9 +243,9 @@ struct SquareMeasuresView: View {
     
     var centimeter: some View {
         VerticallyLabeledTextField(
-            label: "Кв. сантиметр",
+            label: isPreRevolutionary ? "​Кв​. сантиметръ" : "Кв. сантиметр",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. сантиметрах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. сантиметрахъ" : "Введите значение в кв. сантиметрах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.centimeterText,
             onTextChanged: { value in
@@ -253,9 +256,9 @@ struct SquareMeasuresView: View {
     
     var meter: some View {
         VerticallyLabeledTextField(
-            label: "Кв. метр",
+            label: isPreRevolutionary ? "​Кв​. метръ" : "Кв. метр",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кв. метрах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​кв​. метрахъ" : "Введите значение в кв. метрах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.meterText,
             onTextChanged: { value in
@@ -266,9 +269,9 @@ struct SquareMeasuresView: View {
     
     var hectare: some View {
         VerticallyLabeledTextField(
-            label: "Гектар",
+            label: isPreRevolutionary ? "Гектаръ" : "Гектар",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в гектарах",
+            title: isPreRevolutionary ? "Введите значеніе въ гектарахъ" : "Введите значение в гектарах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.hectareText,
             onTextChanged: { value in

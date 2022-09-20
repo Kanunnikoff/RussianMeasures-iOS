@@ -15,61 +15,64 @@ struct MainView: View {
     @AppStorage("SettingsView.isSystemFontAndSize")
     private var isSystemFontAndSize: Bool = true
     
+    @AppStorage("SettingsView.isPreRevolutionary")
+    private var isPreRevolutionary: Bool = false
+    
     var body: some View {
         List {
             NavigationLink(value: MeasuresItem.length) {
-                Text("Меры длины")
+                Text(isPreRevolutionary ? "Мѣры длины" : "Меры длины")
                     .font(isSystemFontAndSize ? .body : Config.customBodyFont)
             }
             
             NavigationLink(value: MeasuresItem.square) {
-                Text("Меры площади")
+                Text(isPreRevolutionary ? "Мѣры площади" : "Меры площади")
                     .font(isSystemFontAndSize ? .body : Config.customBodyFont)
             }
             
             Section {
                 NavigationLink(value: MeasuresItem.volume) {
-                    Text("Основные")
+                    Text(isPreRevolutionary ? "Основныя" : "Основные")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
                 NavigationLink(value: MeasuresItem.bulkSolids) {
-                    Text("Сыпучие тела (хлебные меры)")
+                    Text(isPreRevolutionary ? "Сыпучія тѣла (​хлѣбныя​ мѣры)" : "Сыпучие тела (хлебные меры)")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
                 NavigationLink(value: MeasuresItem.liquidBodies) {
-                    Text("Жидкие тела («винные меры»)")
+                    Text(isPreRevolutionary ? "Жидкія тѣла («​винныя​ мѣры»)" : "Жидкие тела («винные меры»)")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
             } header: {
-                Text("Меры объёма")
+                Text(isPreRevolutionary ? "Мѣры объёма" : "Меры объёма")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
-                Text("Куб. сажень, осьмина, штоф,..")
+                Text(isPreRevolutionary ? "Куб. сажень, ​осьмина​, штофъ,.." : "Куб. сажень, осьмина, штоф,..")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
             Section {
                 NavigationLink(value: MeasuresItem.weight) {
-                    Text("Основные")
+                    Text(isPreRevolutionary ? "Основныя" : "Основные")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
                 NavigationLink(value: MeasuresItem.pharmaceutical) {
-                    Text("Аптекарские и тройские")
+                    Text(isPreRevolutionary ? "​Аптекарскія​ и ​тройскія​" : "Аптекарские и тройские")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
             } header: {
-                Text("Меры веса")
+                Text(isPreRevolutionary ? "Мѣры вѣса" : "Меры веса")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
-                Text("Пуд, золотник, унция,..")
+                Text(isPreRevolutionary ? "Пудъ, золотникъ, унція,.." : "Пуд, золотник, унция,..")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
             NavigationLink(value: MeasuresItem.pieceItems) {
-                Text("Меры поштучных предметов")
+                Text(isPreRevolutionary ? "Мѣры поштучныхъ предметовъ" : "Меры поштучных предметов")
                     .font(isSystemFontAndSize ? .body : Config.customBodyFont)
             }
         }
@@ -81,7 +84,7 @@ struct MainView: View {
 #elseif !os(tvOS) && !os(watchOS)
         .listStyle(.bordered)
 #endif
-        .navigationTitle(Util.getAppDisplayName())
+        .navigationTitle(isPreRevolutionary ? "​Русскія​ мѣры" : Util.getAppDisplayName())
     }
 }
 

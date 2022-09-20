@@ -12,13 +12,16 @@ struct AboutView: View {
     @AppStorage("SettingsView.isSystemFontAndSize")
     private var isSystemFontAndSize: Bool = true
     
+    @AppStorage("SettingsView.isPreRevolutionary")
+    private var isPreRevolutionary: Bool = false
+    
     var body: some View {
         List {
             VStack(alignment: .leading) {
-                Text(Util.getAppDisplayName())
+                Text(isPreRevolutionary ? "​Русскія​ мѣры" : Util.getAppDisplayName())
                     .font(isSystemFontAndSize ? .headline : Config.customBodyFont)
                 
-                Text("Версия \(Util.getAppVersion()), сборка \(Util.getAppBuild())")
+                Text("\(isPreRevolutionary ? "Версія" : "Версия") \(Util.getAppVersion()), сборка \(Util.getAppBuild())")
                     .font(isSystemFontAndSize ? .caption : Config.customCaptionFont)
                 
                 Text("© 2022 Дмитрiй Канунниковъ")
@@ -28,26 +31,26 @@ struct AboutView: View {
             
             Section {
                 Link(destination: Config.APPSTORE_APP_REVIEW_URL) {
-                    Text("Оценить")
+                    Text(isPreRevolutionary ? "Оцѣнить" : "Оценить")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
 #if !os(tvOS)
                 ShareLink(item: Config.APPSTORE_APP_URL) {
-                    Text("Поделиться")
+                    Text(isPreRevolutionary ? "Подѣлиться" : "Поделиться")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
 #endif
                 
                 Link(destination: Config.APPSTORE_DEVELOPER_URL) {
-                    Text("Другие приложения")
+                    Text(isPreRevolutionary ? "Другія приложенія" : "Другие приложения")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
             } header: {
                 Text("App Store")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
-                Text("Ваше мнение очень важно для меня. Пожалуйста, не поленитесь поставить оценку и написать отзыв.")
+                Text(isPreRevolutionary ? "Ваше мнѣніе очень важно для меня. Пожалуйста, не полѣнитесь поставить оцѣнку и написать отзывъ." : "Ваше мнение очень важно для меня. Пожалуйста, не поленитесь поставить оценку и написать отзыв.")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
@@ -59,17 +62,17 @@ struct AboutView: View {
                 
 #if !os(watchOS)
                 Link(destination: Config.YOUTUBE_URL) {
-                    Text("Мой YouTube-канал")
+                    Text(isPreRevolutionary ? "Мой YouTube-каналъ" : "Мой YouTube-канал")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
                 Link(destination: Config.TWITTER_URL) {
-                    Text("Я в Twitter")
+                    Text(isPreRevolutionary ? "Я въ Twitter" : "Я в Twitter")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
                 Link(destination: Config.INSTAGRAM_URL) {
-                    Text("Я в Instagram")
+                    Text(isPreRevolutionary ? "Я въ Instagram" : "Я в Instagram")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
 #endif
@@ -77,7 +80,7 @@ struct AboutView: View {
                 Text("Обратная связь")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
-                Text("В случае вопросов или предложений, я к Вашим услугам. Будем на связи!")
+                Text(isPreRevolutionary ? "Въ случаѣ вопросовъ или предложеній, я къ Вашимъ услугамъ. Будемъ на связи!" : "В случае вопросов или предложений, я к Вашим услугам. Будем на связи!")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
@@ -88,10 +91,10 @@ struct AboutView: View {
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
             } header: {
-                Text("Политика конфиденциальности")
+                Text(isPreRevolutionary ? "Политика конфиденціальности" : "Политика конфиденциальности")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
-                Text("Подробная информация о том, как приложение использует Ваши данные.")
+                Text(isPreRevolutionary ? "Подробная информація о томъ, какъ приложеніе используетъ Ваши ​данные​." : "Подробная информация о том, как приложение использует Ваши данные.")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
@@ -109,12 +112,12 @@ struct AboutView: View {
                 Text("Поддержка")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             } footer: {
-                Text("Если Вам нравится результат моего труда, то Вы можете, при желании, поддержать меня одним из вышеперечисленных способов.")
+                Text(isPreRevolutionary ? "Если Вамъ нравится результатъ моего труда, то Вы можете, при желаніи, поддержать меня однимъ изъ вышеперечисленныхъ способовъ." : "Если Вам нравится результат моего труда, то Вы можете, при желании, поддержать меня одним из вышеперечисленных способов.")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
 #endif
         }
-        .navigationTitle("О программе")
+        .navigationTitle(isPreRevolutionary ? "О программѣ" : "О программе")
     }
 }
 

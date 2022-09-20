@@ -19,6 +19,9 @@ struct BulkSolidsMeasuresView: View {
     @AppStorage("SettingsView.isSystemFontAndSize")
     private var isSystemFontAndSize: Bool = true
     
+    @AppStorage("SettingsView.isPreRevolutionary")
+    private var isPreRevolutionary: Bool = false
+    
     var body: some View {
         WidthThresholdReader(widthThreshold: 520) { proxy in
             ScrollView(showsIndicators: false) {
@@ -87,7 +90,7 @@ struct BulkSolidsMeasuresView: View {
             }
             .scrollDismissesKeyboard(.immediately)
         }
-        .navigationTitle("Меры сыпучих тел")
+        .navigationTitle(isPreRevolutionary ? "Мѣры сыпучихъ тѣлъ" : "Меры сыпучих тел")
         .onAppear {
             cancellable = subject
                 .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
@@ -102,9 +105,9 @@ struct BulkSolidsMeasuresView: View {
     
     var glass: some View {
         VerticallyLabeledTextField(
-            label: "Стакан",
+            label: isPreRevolutionary ? "Стаканъ" : "Стакан",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в стаканах",
+            title: isPreRevolutionary ? "Введите значеніе въ стаканахъ" : "Введите значение в стаканах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.glassText,
             onTextChanged: { value in
@@ -115,9 +118,9 @@ struct BulkSolidsMeasuresView: View {
     
     var halfHalfHalfSmallQuadruple: some View {
         VerticallyLabeledTextField(
-            label: "Пол-пол-пол-малый четверик",
+            label: isPreRevolutionary ? "Полъ-полъ-полъ-малый ​четверикъ​" : "Пол-пол-пол-малый четверик",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в пол-пол-пол-малых четвериках",
+            title: isPreRevolutionary ? "Введите значеніе въ полъ-полъ-полъ-малыхъ ​четверикахъ​" : "Введите значение в пол-пол-пол-малых четвериках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.halfHalfHalfSmallQuadrupleText,
             onTextChanged: { value in
@@ -128,9 +131,9 @@ struct BulkSolidsMeasuresView: View {
     
     var halfHalfSmallQuadruple: some View {
         VerticallyLabeledTextField(
-            label: "Пол-пол-малый четверик",
+            label: isPreRevolutionary ? "Полъ-полъ-малый ​четверикъ​" : "Пол-пол-малый четверик",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в пол-пол-малых четвериках",
+            title: isPreRevolutionary ? "Введите значеніе въ полъ-полъ-малыхъ ​четверикахъ" : "Введите значение в пол-пол-малых четвериках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.halfHalfSmallQuadrupleText,
             onTextChanged: { value in
@@ -141,9 +144,9 @@ struct BulkSolidsMeasuresView: View {
     
     var semiGarnet: some View {
         VerticallyLabeledTextField(
-            label: "Полугарнец",
+            label: isPreRevolutionary ? "Полугарнецъ" : "Полугарнец",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в полугарнецах",
+            title: isPreRevolutionary ? "Введите значеніе въ полугарнецахъ" : "Введите значение в полугарнецах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.semiGarnetText,
             onTextChanged: { value in
@@ -154,9 +157,9 @@ struct BulkSolidsMeasuresView: View {
     
     var garnets: some View {
         VerticallyLabeledTextField(
-            label: "Гарнец",
+            label: isPreRevolutionary ? "Гарнецъ" : "Гарнец",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в гарнецах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​гарнецахъ" : "Введите значение в гарнецах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.garnetsText,
             onTextChanged: { value in
@@ -169,7 +172,7 @@ struct BulkSolidsMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Четвёрка",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в четвёрках",
+            title: isPreRevolutionary ? "Введите значеніе въ четверкахъ" : "Введите значение в четвёрках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.fourText,
             onTextChanged: { value in
@@ -180,9 +183,9 @@ struct BulkSolidsMeasuresView: View {
     
     var halfQuad: some View {
         VerticallyLabeledTextField(
-            label: "Получетверик",
+            label: isPreRevolutionary ? "Получетверикъ" : "Получетверик",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в получетвериках",
+            title: isPreRevolutionary ? "Введите значеніе въ получетверикахъ" : "Введите значение в получетвериках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.halfQuadText,
             onTextChanged: { value in
@@ -193,9 +196,9 @@ struct BulkSolidsMeasuresView: View {
     
     var quad: some View {
         VerticallyLabeledTextField(
-            label: "Четверик",
+            label: isPreRevolutionary ? "Четверикъ" : "Четверик",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в четвериках",
+            title: isPreRevolutionary ? "Введите значеніе въ ​четверикахъ" : "Введите значение в четвериках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.quadText,
             onTextChanged: { value in
@@ -208,7 +211,7 @@ struct BulkSolidsMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Полосьмина",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в полосьминах",
+            title: isPreRevolutionary ? "Введите значеніе въ полосьминахъ" : "Введите значение в полосьминах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.polosminaText,
             onTextChanged: { value in
@@ -221,7 +224,7 @@ struct BulkSolidsMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Осьмина",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в осьминах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​осьминахъ" : "Введите значение в осьминах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.osminaText,
             onTextChanged: { value in
@@ -234,7 +237,7 @@ struct BulkSolidsMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Четверть",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в четвертях",
+            title: isPreRevolutionary ? "Введите значеніе въ четвертяхъ" : "Введите значение в четвертях",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.quarterText,
             onTextChanged: { value in
@@ -247,7 +250,7 @@ struct BulkSolidsMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Полокова",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в полоковах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​полоковахъ" : "Введите значение в полоковах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.polokovaText,
             onTextChanged: { value in
@@ -260,7 +263,7 @@ struct BulkSolidsMeasuresView: View {
         VerticallyLabeledTextField(
             label: "Кадка",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в кадках",
+            title: isPreRevolutionary ? "Введите значеніе въ кадкахъ" : "Введите значение в кадках",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.tubText,
             onTextChanged: { value in
@@ -271,9 +274,9 @@ struct BulkSolidsMeasuresView: View {
     
     var cebra: some View {
         VerticallyLabeledTextField(
-            label: "Цебр",
+            label: isPreRevolutionary ? "Цебръ" : "Цебр",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в цебрах",
+            title: isPreRevolutionary ? "Введите значеніе въ ​цебрахъ" : "Введите значение в цебрах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.cebraText,
             onTextChanged: { value in
@@ -284,9 +287,9 @@ struct BulkSolidsMeasuresView: View {
     
     var liters: some View {
         VerticallyLabeledTextField(
-            label: "Литр",
+            label: isPreRevolutionary ? "Литръ" : "Литр",
             labelFont: isSystemFontAndSize ? .headline : Config.customHeadlineFont,
-            title: "Введите значение в литрах",
+            title: isPreRevolutionary ? "Введите значеніе въ литрахъ" : "Введите значение в литрах",
             font: isSystemFontAndSize ? .body : Config.customBodyFont,
             text: $viewModel.literText,
             onTextChanged: { value in
