@@ -68,6 +68,8 @@
 		0A747CBB289E6852005C5EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A747CBA289E6852005C5EEA /* Assets.xcassets */; };
 		0A747CBF289E6852005C5EEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A747CBE289E6852005C5EEA /* Preview Assets.xcassets */; };
 		0A8DD56128DA6AC700E83A12 /* RussianMeasuresSystemWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A0CD19028D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A93BC9028DE47180052C55F /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A93BC8F28DE47180052C55F /* Stickers.xcassets */; };
+		0A93BC9428DE47180052C55F /* RussianMeasuresStickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0A93BC8D28DE47170052C55F /* RussianMeasuresStickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A958386289EB76600640452 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837A289EB76600640452 /* SettingsView.swift */; };
 		0A958387289EB76600640452 /* DetailColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837C289EB76600640452 /* DetailColumn.swift */; };
 		0A958388289EB76600640452 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837D289EB76600640452 /* Sidebar.swift */; };
@@ -103,6 +105,13 @@
 			remoteGlobalIDString = 0A0CD18F28D7171A00DBC566;
 			remoteInfo = "RussianMeasuresSystemWatch Watch App";
 		};
+		0A93BC9228DE47180052C55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A747CAB289E6851005C5EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A93BC8C28DE47170052C55F;
+			remoteInfo = RussianMeasuresStickers;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,6 +124,17 @@
 				0A8DD56128DA6AC700E83A12 /* RussianMeasuresSystemWatch Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A93BC9528DE47180052C55F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A93BC9428DE47180052C55F /* RussianMeasuresStickers.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -151,6 +171,9 @@
 		0A747CBA289E6852005C5EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A747CBC289E6852005C5EEA /* RussianMeasuresSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RussianMeasuresSystem.entitlements; sourceTree = "<group>"; };
 		0A747CBE289E6852005C5EEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A93BC8D28DE47170052C55F /* RussianMeasuresStickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RussianMeasuresStickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A93BC8F28DE47180052C55F /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		0A93BC9128DE47180052C55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A95837A289EB76600640452 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0A95837C289EB76600640452 /* DetailColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailColumn.swift; sourceTree = "<group>"; };
 		0A95837D289EB76600640452 /* Sidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
@@ -351,6 +374,7 @@
 				0A0CD1CB28D726CD00DBC566 /* Shared */,
 				0A747CB5289E6851005C5EEA /* RussianMeasuresSystem */,
 				0A0CD19128D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App */,
+				0A93BC8E28DE47170052C55F /* RussianMeasuresStickers */,
 				0A747CB4289E6851005C5EEA /* Products */,
 				0A8DD56028DA6AC700E83A12 /* Frameworks */,
 			);
@@ -361,6 +385,7 @@
 			children = (
 				0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */,
 				0A0CD19028D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App.app */,
+				0A93BC8D28DE47170052C55F /* RussianMeasuresStickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -391,6 +416,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A93BC8E28DE47170052C55F /* RussianMeasuresStickers */ = {
+			isa = PBXGroup;
+			children = (
+				0A93BC8F28DE47180052C55F /* Stickers.xcassets */,
+				0A93BC9128DE47180052C55F /* Info.plist */,
+			);
+			path = RussianMeasuresStickers;
 			sourceTree = "<group>";
 		};
 		0A958378289EB76600640452 /* Presentation */ = {
@@ -520,16 +554,33 @@
 				0A747CB0289E6851005C5EEA /* Frameworks */,
 				0A747CB1289E6851005C5EEA /* Resources */,
 				0A8DD56428DA6AC700E83A12 /* Embed Watch Content */,
+				0A93BC9528DE47180052C55F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0A8DD56328DA6AC700E83A12 /* PBXTargetDependency */,
+				0A93BC9328DE47180052C55F /* PBXTargetDependency */,
 			);
 			name = RussianMeasuresSystem;
 			productName = RussianMeasuresSystem;
 			productReference = 0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0A93BC8C28DE47170052C55F /* RussianMeasuresStickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A93BC9828DE47180052C55F /* Build configuration list for PBXNativeTarget "RussianMeasuresStickers" */;
+			buildPhases = (
+				0A93BC8B28DE47170052C55F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RussianMeasuresStickers;
+			productName = RussianMeasuresStickers;
+			productReference = 0A93BC8D28DE47170052C55F /* RussianMeasuresStickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
 		};
 /* End PBXNativeTarget section */
 
@@ -545,6 +596,9 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					0A747CB2289E6851005C5EEA = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					0A93BC8C28DE47170052C55F = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -564,6 +618,7 @@
 			targets = (
 				0A747CB2289E6851005C5EEA /* RussianMeasuresSystem */,
 				0A0CD18F28D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App */,
+				0A93BC8C28DE47170052C55F /* RussianMeasuresStickers */,
 			);
 		};
 /* End PBXProject section */
@@ -586,6 +641,14 @@
 				0A47D84A28C351250023821E /* monomakh_unicode.ttf in Resources */,
 				0A747CBF289E6852005C5EEA /* Preview Assets.xcassets in Resources */,
 				0A747CBB289E6852005C5EEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A93BC8B28DE47170052C55F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A93BC9028DE47180052C55F /* Stickers.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +756,11 @@
 			target = 0A0CD18F28D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App */;
 			targetProxy = 0A8DD56228DA6AC700E83A12 /* PBXContainerItemProxy */;
 		};
+		0A93BC9328DE47180052C55F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A93BC8C28DE47170052C55F /* RussianMeasuresStickers */;
+			targetProxy = 0A93BC9228DE47180052C55F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -702,7 +770,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystemWatch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
 				ENABLE_PREVIEWS = YES;
@@ -716,7 +784,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -734,7 +802,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystemWatch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
 				ENABLE_PREVIEWS = YES;
@@ -748,7 +816,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -883,7 +951,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystem/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
@@ -907,7 +975,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -932,7 +1000,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystem/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
@@ -956,7 +1024,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -967,6 +1035,53 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
+		0A93BC9628DE47180052C55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RussianMeasuresStickers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Русские меры";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem.RussianMeasuresStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A93BC9728DE47180052C55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RussianMeasuresStickers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Русские меры";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem.RussianMeasuresStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -996,6 +1111,15 @@
 			buildConfigurations = (
 				0A747CC3289E6852005C5EEA /* Debug */,
 				0A747CC4289E6852005C5EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A93BC9828DE47180052C55F /* Build configuration list for PBXNativeTarget "RussianMeasuresStickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A93BC9628DE47180052C55F /* Debug */,
+				0A93BC9728DE47180052C55F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
