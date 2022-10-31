@@ -67,9 +67,9 @@
 		0A747CB7289E6851005C5EEA /* RussianMeasuresSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A747CB6289E6851005C5EEA /* RussianMeasuresSystemApp.swift */; };
 		0A747CBB289E6852005C5EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A747CBA289E6852005C5EEA /* Assets.xcassets */; };
 		0A747CBF289E6852005C5EEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A747CBE289E6852005C5EEA /* Preview Assets.xcassets */; };
-		0A8DD56128DA6AC700E83A12 /* RussianMeasuresSystemWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A0CD19028D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A8DD56128DA6AC700E83A12 /* RussianMeasuresSystemWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A0CD19028D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A93BC9028DE47180052C55F /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A93BC8F28DE47180052C55F /* Stickers.xcassets */; };
-		0A93BC9428DE47180052C55F /* RussianMeasuresStickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0A93BC8D28DE47170052C55F /* RussianMeasuresStickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A93BC9428DE47180052C55F /* RussianMeasuresStickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0A93BC8D28DE47170052C55F /* RussianMeasuresStickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A958386289EB76600640452 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837A289EB76600640452 /* SettingsView.swift */; };
 		0A958387289EB76600640452 /* DetailColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837C289EB76600640452 /* DetailColumn.swift */; };
 		0A958388289EB76600640452 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95837D289EB76600640452 /* Sidebar.swift */; };
@@ -753,11 +753,13 @@
 /* Begin PBXTargetDependency section */
 		0A8DD56328DA6AC700E83A12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 0A0CD18F28D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App */;
 			targetProxy = 0A8DD56228DA6AC700E83A12 /* PBXContainerItemProxy */;
 		};
 		0A93BC9328DE47180052C55F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 0A93BC8C28DE47170052C55F /* RussianMeasuresStickers */;
 			targetProxy = 0A93BC9228DE47180052C55F /* PBXContainerItemProxy */;
 		};
@@ -986,6 +988,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
 			};
 			name = Debug;
 		};
@@ -1035,6 +1038,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
 			};
 			name = Release;
 		};
