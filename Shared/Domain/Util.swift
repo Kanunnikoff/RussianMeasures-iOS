@@ -11,11 +11,8 @@ import UIKit
 import AppKit
 #endif
 import SwiftUI
-import StoreKit
 
 struct Util {
-    
-    private static let LAUNCHES_COUNT_THRESHOLD = 5
     
     private static let formatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -28,15 +25,6 @@ struct Util {
         return formatter
     }()
     
-#if !os(tvOS) && !os(watchOS)
-    @AppStorage("Util.launchesCount")
-    private static var launchesCount: Int = 0
-    
-    @AppStorage("Util.lastVersionPromtedForReview")
-    private static var lastVersionPromtedForReview: String = ""
-    
-    @Environment(\.requestReview) static var requestReview
-#endif
     
     private init() {
     }
@@ -70,19 +58,4 @@ struct Util {
         
         return build
     }
-    
-#if !os(tvOS) && !os(watchOS)
-    @MainActor static func requestReviewIfNeeded() {
-        launchesCount += 1
-        
-        // Get the current bundle version for the app
-        let currentVersion = getAppBuild()
-        
-        // Has the process been completed several times and the user has not already been prompted for this version?
-        if launchesCount >= LAUNCHES_COUNT_THRESHOLD && currentVersion != lastVersionPromtedForReview {
-            requestReview()
-            lastVersionPromtedForReview = currentVersion
-        }
-    }
-#endif
 }

@@ -17,17 +17,5 @@ struct RussianMeasuresSystemApp: App {
 #if os(macOS)
         .defaultSize(width: 1000, height: 650)
 #endif
-        
-#if os(macOS)
-        MenuBarExtra {
-            VStack {
-                Text("Русские меры")
-            }
-            .padding()
-        } label: {
-            Text("Ⰳ")
-        }
-        .menuBarExtraStyle(.window)
-#endif
     }
 }

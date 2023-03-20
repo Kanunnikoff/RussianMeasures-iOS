@@ -6,11 +6,24 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ContentView: View {
     
     @State private var selection: SidebarItem? = SidebarItem.main
     @State private var path = NavigationPath()
+    
+#if !os(tvOS) && !os(watchOS)
+    private let LAUNCHES_COUNT_THRESHOLD = 5
+    
+    @AppStorage("ContentView.launchesCount")
+    private var launchesCount: Int = 0
+    
+    @AppStorage("ContentView.lastVersionPromtedForReview")
+    private var lastVersionPromtedForReview: String = ""
+    
+    @Environment(\.requestReview) var requestReview
+#endif
     
     var body: some View {
         NavigationSplitView {
@@ -26,12 +39,29 @@ struct ContentView: View {
 #if os(macOS)
         .frame(minWidth: 600, minHeight: 450)
 #endif
-#if !os(tvOS)
+#if !os(tvOS) && !os(watchOS)
         .onAppear {
-            Util.requestReviewIfNeeded()
+            requestReviewIfNeeded()
         }
 #endif
     }
+    
+#if !os(tvOS) && !os(watchOS)
+    private func requestReviewIfNeeded() {
+        launchesCount += 1
+        
+        // Get the current bundle version for the app
+        let currentVersion = Util.getAppBuild()
+        
+        // Has the process been completed several times and the user has not already been prompted for this version?
+        if launchesCount >= LAUNCHES_COUNT_THRESHOLD && currentVersion != lastVersionPromtedForReview {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                requestReview()
+                lastVersionPromtedForReview = currentVersion
+            }
+        }
+    }
+#endif
 }
 
 struct ContentView_Previews: PreviewProvider {
