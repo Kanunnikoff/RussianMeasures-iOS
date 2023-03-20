@@ -104,9 +104,16 @@ struct AboutView: View {
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
                 }
                 
-                Link(destination: Config.BOOSTY) {
-                    Text("Boosty")
+                Link(destination: Config.BUY_ME_A_COFFEE) {
+                    Text("Buy Me a Coffee")
                         .font(isSystemFontAndSize ? .body : Config.customBodyFont)
+                }
+                
+                if Locale.current.language.languageCode?.identifier == Locale.LanguageCode.russian.identifier {
+                    Link(destination: Config.BOOSTY) {
+                        Text("Boosty")
+                            .font(isSystemFontAndSize ? .body : Config.customBodyFont)
+                    }
                 }
             } header: {
                 Text("Поддержка")

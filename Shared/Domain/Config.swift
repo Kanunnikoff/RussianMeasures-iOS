@@ -36,6 +36,7 @@ struct Config {
     // --- Support
     
     static let PATREON = URL(string: "https://patreon.com/DmitryKanunnikoff")!
+    static let BUY_ME_A_COFFEE = URL(string: "https://www.buymeacoffee.com/Kanunnikoff")!
     static let BOOSTY = URL(string: "https://boosty.to/dmitrykanunnikoff")!
     
     //---
