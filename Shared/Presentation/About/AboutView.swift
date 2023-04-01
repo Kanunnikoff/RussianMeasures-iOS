@@ -24,7 +24,7 @@ struct AboutView: View {
                 Text("\(isPreRevolutionary ? "Версія" : "Версия") \(Util.getAppVersion()), сборка \(Util.getAppBuild())")
                     .font(isSystemFontAndSize ? .caption : Config.customCaptionFont)
                 
-                Text("© 2022 Дмитрiй Канунниковъ")
+                Text("© 2023 Дмитрiй Канунниковъ")
                     .font(isSystemFontAndSize ? .subheadline : Config.customSubhedlineFont)
                     .padding(.top, 1)
             }

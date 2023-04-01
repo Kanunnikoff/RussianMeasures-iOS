@@ -50,13 +50,20 @@ struct VerticallyLabeledTextField: View {
 #endif
 #if os(macOS)
                 .textFieldStyle(.roundedBorder)
+                .onChange(of: text) { value in
+                    if isFocused || isEditing {
+                        onTextChanged(value)
+                    }
+                }
 #endif
+#if !os(macOS)
                 .onChange(of: text) { value in
                     if isFocused || isEditing || isCommited {
                         isCommited = false
                         onTextChanged(value)
                     }
                 }
+#endif
                 
 #if os(iOS)
                 if isFocused && !text.isEmpty {
