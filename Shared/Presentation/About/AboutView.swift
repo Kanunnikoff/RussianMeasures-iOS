@@ -98,6 +98,7 @@ struct AboutView: View {
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
             
+#if !os(macOS)
             Section {
                 Link(destination: Config.PATREON) {
                     Text("Patreon")
@@ -122,6 +123,7 @@ struct AboutView: View {
                 Text(isPreRevolutionary ? "Если Вамъ нравится результатъ моего труда, то Вы можете, при желаніи, поддержать меня однимъ изъ вышеперечисленныхъ способовъ." : "Если Вам нравится результат моего труда, то Вы можете, при желании, поддержать меня одним из вышеперечисленных способов.")
                     .font(isSystemFontAndSize ? .footnote : Config.customFootnoteFont)
             }
+#endif
 #endif
         }
         .navigationTitle(isPreRevolutionary ? "О программѣ" : "О программе")
