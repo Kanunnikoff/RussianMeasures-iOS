@@ -166,7 +166,7 @@
 		0A6E9B7428C52B4D001EADD0 /* WeightMeasuresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMeasuresViewModel.swift; sourceTree = "<group>"; };
 		0A6E9B7628C52B60001EADD0 /* WeightMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMeasuresView.swift; sourceTree = "<group>"; };
 		0A6E9B7828C52B7D001EADD0 /* WeightMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMeasure.swift; sourceTree = "<group>"; };
-		0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussianMeasuresSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A747CB3289E6851005C5EEA /* Русские меры.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Русские меры.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A747CB6289E6851005C5EEA /* RussianMeasuresSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussianMeasuresSystemApp.swift; sourceTree = "<group>"; };
 		0A747CBA289E6852005C5EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A747CBC289E6852005C5EEA /* RussianMeasuresSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RussianMeasuresSystem.entitlements; sourceTree = "<group>"; };
@@ -383,7 +383,7 @@
 		0A747CB4289E6851005C5EEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */,
+				0A747CB3289E6851005C5EEA /* Русские меры.app */,
 				0A0CD19028D7171A00DBC566 /* RussianMeasuresSystemWatch Watch App.app */,
 				0A93BC8D28DE47170052C55F /* RussianMeasuresStickers.appex */,
 			);
@@ -564,7 +564,7 @@
 			);
 			name = RussianMeasuresSystem;
 			productName = RussianMeasuresSystem;
-			productReference = 0A747CB3289E6851005C5EEA /* RussianMeasuresSystem.app */;
+			productReference = 0A747CB3289E6851005C5EEA /* Русские меры.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0A93BC8C28DE47170052C55F /* RussianMeasuresStickers */ = {
@@ -954,7 +954,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystem/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
@@ -978,9 +978,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Русские меры";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
@@ -1004,7 +1004,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RussianMeasuresSystem/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
@@ -1028,9 +1028,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.3.0;
+				MARKETING_VERSION = 1.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.RussianMeasuresSystem;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Русские меры";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
